@@ -1,0 +1,191 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thermal Load Facility Requirements — the working draft</title>
+<style>
+:root{--ink:#1a1a1a;--bg:#f7f6f1;--blue:#183eb0;--water:#cbe3f2;--rule:#ddd9cc;--dim:#6a6862}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font:16px/1.7 -apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif}
+header{max-width:1180px;margin:0 auto;padding:56px 32px 0}
+main{max-width:1180px;margin:0 auto;padding:0 32px 90px}
+.kicker{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--dim);margin:0 0 14px}
+.kicker a{color:var(--dim)}
+h1{font-size:clamp(34px,6vw,60px);line-height:1.03;letter-spacing:-.03em;margin:0 0 18px;font-weight:700}
+.lede{font-size:clamp(18px,2.2vw,22px);line-height:1.5;max-width:38ch;color:#3a3833;margin:0 0 34px}
+h2{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);
+   margin:52px 0 10px;font-weight:600}
+p{max-width:62ch;margin:0 0 13px}
+strong{font-weight:650}
+.note{border-left:3px solid var(--water);padding:2px 0 2px 18px;color:#4a4842;margin:16px 0 0;
+      max-width:62ch}
+.warn{border-left-color:var(--blue)}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;
+      background:var(--rule);border:1px solid var(--rule);margin:26px 0 0;max-width:900px}
+.meta div{background:var(--bg);padding:13px 16px}
+.meta b{display:block;font-size:23px;letter-spacing:-.02em;line-height:1.1}
+.meta span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+/* ── the instrument itself. enrolled bills are printed in a fixed measure with hanging
+      subsections; the indentation IS the structure, so it is preserved rather than restyled. */
+.bill{border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);margin:30px 0 0;
+      padding:26px 0 30px;background:#fffdf8}
+.affects{margin:16px 0 0;max-width:62ch}
+.affects .lbl{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);
+     margin:14px 0 4px;font-weight:650}
+.affects ul{margin:0;padding-left:18px;font-size:14.5px;line-height:1.85;color:#33312c}
+.affects b{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:14px}
+.sec{margin:0 0 34px;padding:0 26px}
+.sec:last-child{margin-bottom:0}
+.sec h3{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);
+        margin:0 0 4px;font-weight:650}
+.sec .catch{font-size:19px;font-weight:700;letter-spacing:-.01em;margin:0 0 12px;max-width:52ch}
+.sec pre{font:13.5px/1.72 ui-monospace,"SF Mono",Menlo,monospace;white-space:pre-wrap;
+         margin:0;max-width:78ch;color:#26241f;overflow-x:auto}
+.amend{display:inline-block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+       background:var(--blue);color:#fff;padding:3px 8px;border-radius:2px;margin-left:8px;
+       vertical-align:2px}
+footer{border-top:1px solid var(--rule);max-width:1180px;margin:0 auto;padding:22px 32px 70px;
+       color:var(--dim);font-size:13px}
+a{color:var(--blue)}
+@media (max-width:640px){.sec{padding:0 14px}}
+</style><style>.bill pre{margin:0;padding:0 26px;white-space:pre-wrap;word-wrap:break-word;font:14px/1.75 ui-monospace,"SF Mono",Menlo,monospace;color:#33312c}@media(max-width:620px){.bill pre{font-size:12.5px;padding:0 14px}}</style>
+<header>
+<p class="kicker"><a href="index.html">← Earth and Water</a> · the data centre bill</p>
+<h1>Thermal Load Facility Requirements</h1>
+<p class="lede">Four provisions. It appropriates nothing, it never mentions a pipeline, and it does not ask where your water came from.</p>
+<div class="meta"><div><b>4</b><span>provisions</span></div><div><b>$0</b><span>appropriated</span></div><div><b>150%</b><span>of peak load, renewable</span></div><div><b>36 h</b><span>of storage</span></div><div><b>0</b><span>pipelines mentioned</span></div><div><b>973</b><span>words</span></div></div>
+</header>
+<main>
+<h2>What this is</h2>
+<p>A working draft of a Utah bill setting siting requirements for large thermal load facilities — data centres, principally. <strong>It does three things: it keeps drinking water and basin water out of the cooling loop, it makes a facility bring its own generation and storage, and it makes it sign a paid grid-support agreement with the utility that serves it.</strong></p><p class="note">⭐ <strong>The frame is a parking minimum.</strong> Arizona has required a hundred-year assured water supply before a subdivision can be built since 1980. California has required solar on new homes since 2020. <em>This asks a data centre for both.</em> There is nothing novel in it, which is the entire point.</p>
+<p class="note warn">⚠ <strong>This was not drafted by a lawyer and it is not legal advice.</strong> It was drafted by a layman with machine assistance, against six enrolled Utah bills that passed and the live Utah Code. <em>It is published in order to be corrected.</em></p>
+<h2>The two water tests do different jobs</h2>
+<p><strong>§201(2) — no potable water — protects the ratepayer.</strong> Treatment to drinking standard is among the costliest parts of a supplier’s cost of service and it confers no benefit whatsoever on a machine. That provision travels to any state.</p><p><strong>§201(1) — no consumptive use of basin water — protects the lake.</strong> In a terminal basin every evaporated gallon is gone, treated or not. <em>That one needs a terminal basin to make sense, and is why this is a Utah bill rather than a template.</em></p><p class="note">⚠ And the test is <strong>consumption, not use</strong>. §201(3) says the section “does not prohibit a process by reason of the process being evaporative” where the vapour is condensed and returned. <em>Once-through that gives the water back is legal. A wet tower is not. The ban is on the loss.</em></p>
+<h2>Where 36 hours comes from</h2>
+<p>It is not a number anyone picked to fit a particular technology. <strong>§202(3) writes the derivation into the statute:</strong> the storage requirement is 150% of <em>one day</em> of operation at peak load — the same one-and-a-half already applied to generation, applied to a day. <em>Stated in hours only for administrative convenience.</em></p><p class="note">⭐ And <strong>§202(4) names no technology and no ownership structure</strong>. Gravity, lithium, thermal, compressed air, a flywheel, or something not yet built — any means that delivers the capacity satisfies it. Utah has between seventeen and twenty thousand abandoned mine openings. <em>The standard is not a moat.</em></p>
+<h2>The disclosure</h2>
+<p class="note warn">⚠ <strong>The author intends to develop facilities that would supply parties subject to this bill.</strong> That is said here, first, rather than discovered later. A rule that creates a market for the thing you sell is a real conflict, and the answer is that every provision is written as an outcome rather than a method — <em>if a competitor meets the standard with different equipment, the statute does not care.</em></p>
+<h2>The instrument</h2>
+<div class="bill"><pre>THERMAL LOAD FACILITY REQUIREMENTS
+
+LONG TITLE
+
+General Description:
+        This bill establishes siting requirements for large thermal load facilities relating to
+water used for heat rejection, electrical generation and storage capacity, and coordination with
+the electrical grid.
+
+Highlighted Provisions:
+        This bill:
+        ▸ prohibits the consumption of water withdrawn from within the Great Salt Lake basin for
+heat rejection at a thermal load facility;
+        ▸ prohibits the delivery of potable water to a thermal load facility for heat rejection;
+        ▸ requires a thermal load facility to bring generation and storage capacity sufficient to
+serve its own load, at a stated multiple of that load, from renewable sources;
+        ▸ requires a thermal load facility to enter an agreement with the serving electrical
+utility for grid support services, for compensation; and
+        ▸ leaves the source, treatment and disposition of nonpotable water used by the facility
+unregulated by this chapter.
+
+Money Appropriated in this Bill:
+        None
+
+Other Special Clauses:
+        None
+
+Utah Code Sections Affected:
+ENACTS:
+        54-25-101, Utah Code Annotated 1953
+        54-25-201, Utah Code Annotated 1953
+        54-25-202, Utah Code Annotated 1953
+        54-25-203, Utah Code Annotated 1953
+        54-25-301, Utah Code Annotated 1953
+
+Be it enacted by the Legislature of the state of Utah:
+
+Section 1. Section 54-25-101 is enacted to read:
+
+CHAPTER 25. THERMAL LOAD FACILITIES
+
+54-25-101. Definitions.
+        As used in this chapter:
+        (1) &quot;Basin&quot; means the Great Salt Lake watershed as defined in Section 65A-16-101.
+        (2) &quot;Consumptive heat rejection&quot; means heat rejection by a process that evaporates water
+withdrawn from within the basin and does not recover that water and return it to the waters of the
+basin.
+        (3) &quot;Nonpotable water&quot; means water that is not treated to the standards established under
+Title 19, Chapter 4, Safe Drinking Water Act.
+        (4) &quot;Peak load&quot; means the highest hourly electrical demand of a thermal load facility,
+determined by measurement after the facility has operated for 12 months and by design capacity
+before that time.
+        (5) &quot;Renewable&quot; has the same meaning as &quot;qualifying energy resource&quot; in Section 54-17-601.
+        (6) &quot;Thermal load facility&quot; means a facility having an installed heat rejection capacity of
+five megawatts or more, including a data center, and does not include a hospital, a public or
+private school, a correctional facility, or a residential building.
+
+Section 2. Section 54-25-201 is enacted to read:
+
+54-25-201. Water used for heat rejection.
+        (1) A thermal load facility within the basin may not use consumptive heat rejection.
+        (2) A public water supplier may not deliver potable water to a thermal load facility for
+the purpose of heat rejection, and a thermal load facility may not use potable water for heat
+rejection.
+        (3) This section does not prohibit a process by reason of the process being evaporative. A
+process that evaporates water and recovers and returns that water to the waters of the basin,
+including a process enclosed so that vapor is condensed and returned, is not consumptive heat
+rejection.
+        (4) Subsection (1) does not apply to water conveyed into the basin from outside it, and
+this chapter does not limit the use of such water for heat rejection, for an ornamental water
+feature, or for any other purpose.
+        (5) Subsections (1) and (2) do not apply to:
+                (a) water used for human consumption, sanitation, or food service at the facility;
+                (b) fire suppression, including the charging and testing of a fire suppression
+system; or
+                (c) a use during a state of emergency declared under Title 53, Chapter 2a.
+        (6) This chapter does not regulate the source of nonpotable water conveyed into the basin
+for use by a thermal load facility, the means by which that water is conveyed, the treatment
+applied to it, or its disposition after use.
+        (7) A facility placed in service before the effective date of this chapter shall comply
+with this section on or before December 31, 2035.
+
+Section 3. Section 54-25-202 is enacted to read:
+
+54-25-202. Generation and storage.
+        (1) A thermal load facility shall own, or hold under contract for the life of the facility,
+generation capacity from renewable sources equal to not less than 150% of its peak load.
+        (2) A thermal load facility shall own, or hold under contract for the life of the facility,
+energy storage sufficient to serve its peak load for not less than 36 hours.
+        (3) The requirement under Subsection (2) is 150% of one day of operation at peak load, and
+is stated in hours for administrative convenience only.
+        (4) Nothing in this section requires the use of a particular generation technology, a
+particular storage technology, or a particular ownership structure, and a facility may satisfy this
+section by any means that delivers the stated capacity.
+        (5) A facility placed in service before the effective date of this chapter shall comply
+with this section on or before December 31, 2035.
+
+Section 4. Section 54-25-203 is enacted to read:
+
+54-25-203. Grid support agreement.
+        (1) Before commencing operation, a thermal load facility shall enter into an agreement with
+the electrical corporation or municipal utility serving the facility providing for:
+                (a) the dispatch of the facility&#x27;s generation or storage in support of the serving
+utility&#x27;s system;
+                (b) compensation to the facility for that dispatch; and
+                (c) the allocation of interconnection costs between the facility and the serving
+utility.
+        (2) The parties shall negotiate the terms of an agreement under Subsection (1), including
+compensation and the allocation of interconnection costs.
+        (3) The commission may not prescribe the terms of an agreement under Subsection (1), and
+may resolve a dispute between the parties on the petition of either.
+        (4) An agreement under this section does not make a thermal load facility a public utility.
+
+Section 5. Section 54-25-301 is enacted to read:
+
+54-25-301. Severability.
+        If any provision of this chapter is held invalid, the remaining provisions are given effect
+without the invalid provision.
+
+Section 6. Effective date.
+
+        This bill takes effect on May 6, 2027.</pre></div>
+<p class="kicker" style="margin-top:38px"><a href="index.html">← Earth and Water</a> · <a href="bill.html">the full bill →</a></p>
+</main>

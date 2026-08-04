@@ -1,0 +1,538 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Basin Export Amendments — the working draft</title>
+<style>
+:root{--ink:#1a1a1a;--bg:#f7f6f1;--blue:#183eb0;--water:#cbe3f2;--rule:#ddd9cc;--dim:#6a6862}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font:16px/1.7 -apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif}
+header{max-width:1180px;margin:0 auto;padding:56px 32px 0}
+main{max-width:1180px;margin:0 auto;padding:0 32px 90px}
+.kicker{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--dim);margin:0 0 14px}
+.kicker a{color:var(--dim)}
+h1{font-size:clamp(34px,6vw,60px);line-height:1.03;letter-spacing:-.03em;margin:0 0 18px;font-weight:700}
+.lede{font-size:clamp(18px,2.2vw,22px);line-height:1.5;max-width:38ch;color:#3a3833;margin:0 0 34px}
+h2{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);
+   margin:52px 0 10px;font-weight:600}
+p{max-width:62ch;margin:0 0 13px}
+strong{font-weight:650}
+.note{border-left:3px solid var(--water);padding:2px 0 2px 18px;color:#4a4842;margin:16px 0 0;
+      max-width:62ch}
+.warn{border-left-color:var(--blue)}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;
+      background:var(--rule);border:1px solid var(--rule);margin:26px 0 0;max-width:900px}
+.meta div{background:var(--bg);padding:13px 16px}
+.meta b{display:block;font-size:23px;letter-spacing:-.02em;line-height:1.1}
+.meta span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+/* ── the instrument itself. enrolled bills are printed in a fixed measure with hanging
+      subsections; the indentation IS the structure, so it is preserved rather than restyled. */
+.bill{border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);margin:30px 0 0;
+      padding:26px 0 30px;background:#fffdf8}
+.affects{margin:16px 0 0;max-width:62ch}
+.affects .lbl{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);
+     margin:14px 0 4px;font-weight:650}
+.affects ul{margin:0;padding-left:18px;font-size:14.5px;line-height:1.85;color:#33312c}
+.affects b{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:14px}
+.sec{margin:0 0 34px;padding:0 26px}
+.sec:last-child{margin-bottom:0}
+.sec h3{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);
+        margin:0 0 4px;font-weight:650}
+.sec .catch{font-size:19px;font-weight:700;letter-spacing:-.01em;margin:0 0 12px;max-width:52ch}
+.sec pre{font:13.5px/1.72 ui-monospace,"SF Mono",Menlo,monospace;white-space:pre-wrap;
+         margin:0;max-width:78ch;color:#26241f;overflow-x:auto}
+.amend{display:inline-block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+       background:var(--blue);color:#fff;padding:3px 8px;border-radius:2px;margin-left:8px;
+       vertical-align:2px}
+footer{border-top:1px solid var(--rule);max-width:1180px;margin:0 auto;padding:22px 32px 70px;
+       color:var(--dim);font-size:13px}
+a{color:var(--blue)}
+@media (max-width:640px){.sec{padding:0 14px}}
+</style>
+<header>
+<p class="kicker"><a href="index.html">← Earth and Water</a> · the working draft</p>
+<h1>Basin Export Amendments</h1>
+<p class="lede">Fourteen sections. It amends what is already there rather than inventing anything, which is the only reason it is this short.</p>
+<div class="meta"><div><b>15</b><span>sections</span></div><div><b>6,177</b><span>words</span></div><div><b>3</b><span>existing sections amended</span></div><div><b>$0</b><span>household rate</span></div><div><b>96</b><span>statute sections read</span></div><div><b>6</b><span>enrolled bills modelled</span></div></div>
+</header>
+<main>
+<h2>What this is</h2>
+<p>A working draft of a Utah bill. It prohibits the export of Great Salt Lake basin water in any wrapper — free or embodied in a good — and prices an exemption from that prohibition. <strong>A household pays nothing.</strong></p>
+<p class="note warn">⚠ <strong>This was not drafted by a lawyer, and it is not legal advice.</strong> It was drafted by a layman with machine assistance in a single night, against six enrolled Utah bills that passed and 96 sections of live Utah Code. <em>It is published in order to be corrected.</em> The next step is a public-interest law clinic, and the questions for them are named below rather than hidden.</p>
+<h2>The one structural fact</h2>
+<p><strong>A Utah bill is not a freestanding instrument. It is a set of surgical edits to existing code.</strong> Fifty-two of the sixty-one sections in the six bills read against here are <em>“Section N. Section &lt;cite&gt; is amended to read:”</em>. Nothing invents a document; each one opens a numbered section of the Utah Code and rewrites it in place.</p>
+<p>Which changes what this bill has to argue. <strong>The protection for existing water rights is not drafted here — it is inherited.</strong> Section 73-3-8 already conditions the state engineer’s approval on <em>“the proposed use will not impair existing rights.”</em> This bill adds one clause to that same list, two lines below it. A challenge to the new clause has to explain why the one above it is not also a taking.</p>
+<p class="note">⭐ The same move happens three times. <strong>“Basin”</strong> is not defined — Section 65A-16-101 already defines the Great Salt Lake watershed as the Bear, Jordan, Utah Lake, Weber and West Desert. <strong>The money</strong> goes to the watershed trust the Legislature created in 2022, not to a new fund. <strong>The chapter</strong> is 73-32, which was built in 2023 and already has a Commissioner hanging off it. <em>Three of the hardest things in this bill are already law.</em></p>
+<h2>The questions for counsel</h2>
+<p>Named here because a clinic will find them anyway, and finding them first is worth more than hiding them.</p>
+<p><strong>1. Dormant Commerce Clause.</strong> <em>Sporhase v. Nebraska</em> (1982) holds groundwater is an article of commerce. This is the challenge that matters and the draft does not yet meet it on its face.</p>
+<p><strong>2. Regulatory taking.</strong> The instrument governs destination rather than entitlement, and §73-32-403(2) says so in operative terms. Whether that survives is the question.</p>
+<p><strong>3. The Bear River Compact.</strong> Three states, 1958. The largest inflow to the lake is not Utah’s alone.</p>
+<p><strong>4. Whether any legislator would carry it</strong> — which is not a legal question and is the one that decides everything.</p>
+<h2>Utah Code Sections Affected</h2>
+<div class="affects">
+<p class="lbl">AMENDS</p><ul><li><b>73-3-8</b> · current text effective 2026-05-06</li><li><b>73-32-202</b> · current text effective 2026-05-06</li><li><b>65A-16-201</b></li></ul>
+<p class="lbl">ENACTS</p><ul><li><b>73-32-401</b> · Utah Code Annotated 1953</li><li><b>73-32-402</b> · Utah Code Annotated 1953</li><li><b>73-32-403</b> · Utah Code Annotated 1953</li><li><b>73-32-404</b> · Utah Code Annotated 1953</li><li><b>73-32-405</b> · Utah Code Annotated 1953</li><li><b>73-32-406</b> · Utah Code Annotated 1953</li><li><b>73-32-407</b> · Utah Code Annotated 1953</li><li><b>73-32-408</b> · Utah Code Annotated 1953</li><li><b>73-32-409</b> · Utah Code Annotated 1953</li><li><b>73-32-410</b> · Utah Code Annotated 1953</li></ul>
+</div>
+<p class="note">⭐ <strong>Three sections amended, seven enacted.</strong> The three amendments are where this bill binds or does not — a prohibition that never reaches Section 73-3-8 does not bind the state engineer. <em>Section 73-32 already exists; the Legislature built it in 2023 and hung a Commissioner off it, so this adds Part 4 to a chapter rather than asking for a new place in the code.</em></p>
+<h2>The draft</h2>
+<p class="note">Front matter — <em>Long Title, General Description, Highlighted Provisions, Money Appropriated, Utah Code Sections Affected</em> — is deliberately absent. In a real bill it is written last, off the finished sections. It has not been written yet.</p>
+<div class="bill">
+<div class="sec"><h3>Section 1. Section 73-32-401 is enacted to read:</h3>
+<p class="catch">73-32-401. Legislative findings -- Definitions.</p>
+<pre>        (1) The Legislature finds that:
+                (a) the drainage of the Great Salt Lake is hydrologically separate from the
+Colorado River basin;
+                (b) of 778,641 elevation cells examined within the Salt Lake Valley study frame,
+none drains to the Colorado River, and the frame is entirely tributary to the Great Salt Lake;
+                (c) the water addressed by this part is therefore not apportioned by, and its
+regulation is not governed by, the Colorado River Compact or any agreement made under it; and
+                (d) the condition of the Great Salt Lake is accordingly a matter this state may
+address by its own law, without the concurrence of another state.
+        (2) As used in this part:
+                (a) &quot;Basin&quot; means the Great Salt Lake watershed as defined in Section 65A-16-101.
+                (b) &quot;Commissioner&quot; means the Great Salt Lake commissioner appointed under Section 73-32-201.
+                (c) &quot;Embodied water&quot; means water used in the production of a commodity that is exported from the basin.
+                (d) &quot;Export&quot; means the net consumptive volume leaving the basin and not returning to the basin.
+                (e) &quot;Household use&quot; means water used for domestic purposes within a residence.
+                (f) &quot;Net consumptive volume&quot; means the volume of water consumed that is not returned to the basin.</pre></div>
+<div class="sec"><h3>Section 2. Section 73-32-402 is enacted to read:</h3>
+<p class="catch">73-32-402. Prohibition on export of basin water.</p>
+<pre>(1) A person may not export basin water.
+(2) This section does not apply to a use described in Section 73-32-403.
+(3) This section does not apply to a person granted an exemption under Section 73-32-404.</pre></div>
+<div class="sec"><h3>Section 3. Section 73-32-403 is enacted to read:</h3>
+<p class="catch">73-32-403. Exclusions from export prohibition.</p>
+<pre>(1) This part does not apply to:
+    (a) water used for household purposes within the state;
+    (b) water supplied by a public water supplier, as defined in Section 73-1-4, to retail customers within the state;
+    (c) a water right perfected before the effective date of this part;
+    (d) water withdrawn from an artesian well and used within the parcel from which the water rises; or
+    (e) an existing contract for off-basin delivery of water executed before the effective date of this part.
+(2) This part does not:
+    (a) appropriate water or create a water right;
+    (b) curtail, reallocate, or impair an existing water right;
+    (c) alter the priority date of a water right; or
+    (d) affect the protections afforded water rights under Sections 73-1-4, 73-3-8, and 73-3-3.</pre></div>
+<div class="sec"><h3>Section 4. Section 73-32-404 is enacted to read:</h3>
+<p class="catch">73-32-404. Exemption rates.</p>
+<pre>(1) The commissioner may grant an exemption from Section 73-32-402 upon payment of a rate.
+(2) The rates are:
+(a) $0 for household use, and the commissioner shall not require an application for household use;
+(b) the basin rate for exported water;
+(c) the non-potable rate for water consumed for commercial landscaping, amenity, or scenery, including short-term rentals, lodging, resorts, or golf courses; and
+(d) the non-potable rate plus a premium for imported potable water.
+(3) The commissioner shall set the rates in accordance with Section 73-32-406.
+(4) The commissioner shall deposit the receipts in accordance with Section 65A-16-201.
+        (5) For purposes of the rate imposed on water consumed for commercial landscaping,
+amenity or scenery, the commissioner shall apply the commercial user and institutional user
+classifications in Section 73-10-34. An institutional user under that section includes a golf
+course.</pre></div>
+<div class="sec"><h3>Section 5. Section 73-32-405 is enacted to read:</h3>
+<p class="catch">73-32-405. Licensed brewer export — buy-back requirement.</p>
+<pre>(1) A licensed brewer may export water without volume limit and without paying the export rate on condition that the brewer purchases and delivers into the basin two gallons for each gallon exported.
+(2) The brewer shall verify compliance with Subsection (1) annually to the commissioner.</pre></div>
+<div class="sec"><h3>Section 6. Section 73-3-8 is amended to read:<span class="amend">amends existing law</span></h3>
+<p class="catch">73-3-8. Approval or rejection of application -- Requirements for approval -- Application for specified period of time -- Filing of royalty contract for removal of salt or minerals -- Request for agency action.</p>
+<pre>(1) (a) The state engineer shall approve an application if there is reason to believe that:
+(i) for an application to appropriate, there is unappropriated water in the proposed source;
+(ii) the proposed use will not impair existing rights;
+(iii) the proposed plan:
+(A) is physically and economically feasible, unless the application is filed by the United States Bureau of Reclamation; and
+(B) would not prove detrimental to the public welfare;
+(iv) the applicant has the financial ability to complete the proposed works;
+(v) the application was filed in good faith and not for purposes of speculation or monopoly; and
+(vi) if applicable, the application complies with a groundwater management plan adopted under Section 73-5-15; and
+(vii) the proposed use is not an export prohibited by Section 73-32-402.
+(b) If an application does not meet the requirements of this section, the state engineer shall reject the application.
+(2) (a) The state engineer may approve an application to appropriate water for industrial, power, mining development, manufacturing purposes, agriculture, or municipal purposes for a specific and certain period from the time the water is placed to beneficial use under the application, but in no event may the state engineer grant an application for a period of time less than that ordinarily needed to satisfy the essential and primary purpose of the application or until the water is no longer available as determined by the state engineer.
+(b) At the expiration of the period fixed by the state engineer the water shall revert to the public and is subject to appropriation as provided by this title.
+(c) No later than 60 calendar days before the expiration date of the fixed time period, the state engineer shall send notice by mail or by any form of electronic communication through which receipt is verifiable, to the applicant of record.
+(d) Except as provided by Subsection (2)(e), the state engineer may extend a limited water right upon a showing that:
+(i) the essential purpose of the original application has not been satisfied;
+(ii) the need for an extension is not the result of any default or neglect by the applicant; and
+(iii) the water is still available.
+(e) An extension under Subsection (2)(d) may not exceed the time necessary to satisfy the primary purpose of the original application.
+(f) An applicant shall file a request for extension of a fixed time period in writing in the office of the state engineer on or before the expiration date of the application.
+(3) (a) Before the approval of an application to divert water from a navigable lake or stream of the state that contemplates the recovery of salts and other minerals or elements, as defined in Section 65A-17-101, from the navigable lake or stream by precipitation or otherwise, the applicant shall file with the state engineer a copy of:
+(i) a contract for the payment of royalties to the state; and
+(ii) any mineral lease.
+(b) Upon written notice to the state engineer of termination or noncompliance of a royalty contract or mineral lease described in Subsection (3)(a), the state engineer shall:
+(i) reverse the approval of an application; or
+(ii) indicate on the water right in the records of the state engineer the default if the written notice states that the royalty contract or mineral lease has a reversionary provision related to the water right.
+(4) (a) The state engineer shall investigate a temporary change application.
+(b) The state engineer is not required to publish notice of a temporary change application under Section 73-3-6.
+(c) The state engineer shall:
+(i) approve the temporary change if the state engineer finds there is reason to believe that the temporary change does not impair an existing right; and
+(ii) reject the temporary change if the state engineer finds there is reason to believe the temporary change would impair an existing right.
+(d) If the state engineer rejects a temporary change application, the applicant may file a permanent or fixed time change application.
+(5) (a) With respect to a change application for a permanent or fixed time change:
+(i) the state engineer shall follow the same procedures provided in this title for approving an application to appropriate water; and
+(ii) the rights and duties of a change applicant are the same as the rights and duties of a person who applies to appropriate water under this title.
+(b) The state engineer may waive notice for a permanent or fixed time change application if the application only involves a change in point of diversion of 660 feet or less.
+(c) The state engineer may condition approval of a change application, including to:
+(i) prevent an enlargement of the quantity of water depleted by the nature of the proposed use when compared with the nature of the currently approved use of water proposed to be changed; and
+(ii) ensure that the recognition and subsequent use of saved water, as defined in Section 73-3-3:
+(A) is quantified, reported, and verified;
+(B) does not lead to an enlargement of the depletion or diversion amounts in the underlying water right that serves as the basis of the saved water, or an increase in the authorized number of irrigated acres unless depletion is accounted for and regulated in the condition;
+(C) is limited to the net decrease in depletion and net reduction in diversion of the underlying water right that serves as the basis of the saved water;
+(D) is limited to the volume of water that is sustained over time from the net decrease in depletion or net reduction in diversion of the underlying water right that serves as the basis of the saved water;
+(E) does not violate an existing water agreement; and
+(F) when based solely on a net reduction in diversion, the subsequent use is limited to nonconsumptive beneficial uses and does not increase the depletion allowed by the underlying water right that serves as the basis of the saved water or otherwise cause quantity impairment to an existing water right when the saved water is beneficially used separate from the underlying water right.
+(d) Except for an application proposing to quantify saved water, a condition described in Subsection (5)(c) may not include a reduction in the currently approved diversion rate of water under the water right identified in the change application solely to account for the difference in depletion under the nature of the proposed use when compared with the nature of the currently approved use.
+(6) (a) Except as provided in Subsection (6)(b), the state engineer shall reject a permanent or fixed time change application if the person proposing to make the change is unable to meet the burden described in Subsection 73-3-3(5).
+(b) If otherwise proper, the state engineer may approve a change application upon one or more of the following conditions:
+(i) for part of the water involved;
+(ii) that the applicant acquire a conflicting right; or
+(iii) that the applicant provide and implement a plan approved by the state engineer to mitigate impairment of an existing right.
+(c) (i) There is a rebuttable presumption of quantity impairment, as defined in Section 73-3-3, to the extent that, for a period of at least seven consecutive years, a portion of the right identified in a change application is not:
+(A) diverted from the approved point of diversion; or
+(B) beneficially used at the approved place of use.
+(ii) The rebuttable presumption described in Subsection (6)(c)(i) does not apply if the beneficial use requirement is excused by:
+(A) Subsection 73-1-4(2)(e);
+(B) an approved nonuse application under Subsection 73-1-4(2)(b);
+(C) Subsection 73-3-30(7); or
+(D) the passage of time under Subsection 73-1-4(2)(c)(i).
+(d) The state engineer may not consider quantity impairment based on the conditions described in Subsection (6)(c) unless the issue is raised in a:
+(i) timely protest that identifies which of the protestant&#x27;s existing rights the protestant reasonably believes will experience quantity impairment; or
+(ii) written notice provided by the state engineer to the applicant within 90 days after the change application is filed.
+(e) The written notice described in Subsection (6)(d)(ii) shall:
+(i) specifically identify an existing right the state engineer reasonably believes may experience quantity impairment; and
+(ii) be mailed to the owner of an identified right, as shown by the state engineer&#x27;s records, if the owner has not protested the change application.
+(f) The state engineer is not required to include all rights the state engineer believes may be impaired by the proposed change in the written notice described in Subsection (6)(d)(ii).
+(g) The owner of a right who receives the written notice described in Subsection (6)(d)(ii) may not become a party to the administrative proceeding if the owner has not filed a timely protest.
+(h) If a change applicant, the protestants, and the persons identified by the state engineer under Subsection (6)(d)(ii) come to a written agreement regarding how the issue of quantity impairment shall be mitigated, the state engineer may incorporate the terms of the agreement into a change application approval.
+(7) (a) To determine whether a proposed plan would not prove detrimental to the public welfare under Subsection (1)(a)(iii), the state engineer may only consider:
+(i) the effect of the proposed plan on:
+(A) the beneficial use of water; or
+(B) the quantity, quality, or availability of water; and
+(ii) other factors as specifically directed by statute.
+(b) The state engineer may not consider or rely on detriment to the public welfare under Subsection (1)(a)(iii) as a basis for the rejection of an application if:
+(i) the prevention, regulation, or mitigation of the detrimental effect is reserved to, reasonably within the scope of authority of, or better suited to be addressed by another regulatory agency; or
+(ii) the factors supporting a finding of a detriment to the public welfare:
+(A) are not directly associated with the interests described in Subsection (7)(a); or
+(B) will have a negligible effect on the interests described in Subsection (7)(a).</pre></div>
+<div class="sec"><h3>Section 7. Section 73-32-202 is amended to read:<span class="amend">amends existing law</span></h3>
+<p class="catch">73-32-202. Duties and authorizations of the commissioner.</p>
+<pre>(1) The commissioner, under the administrative oversight of the executive director, shall:
+(a) subject to Section 73-32-204, prepare an approved strategic plan for the long-term health of the Great Salt Lake and update the strategic plan regularly;
+(b) oversee the execution of the strategic plan by other state agencies as provided in Section 73-32-203;
+(c) maintain information that measures Great Salt Lake levels, salinity, and overall health;
+(d) meet regularly with the executive director and with the executive director of the Department of Environmental Quality;
+(e) consult with the Division of Forestry, Fire, and State Lands regarding Title 65A, Chapter 16, Great Salt Lake Watershed Enhancement Program;
+(f) monitor the integrated water assessment conducted under Chapter 10g, Part 4, Great Salt Lake Watershed Integrated Water Assessment;
+(g) inform the governor, the president of the Senate, and the speaker of the House of Representatives, at least annually, about the status of the strategic plan and the progress regarding implementation of the strategic plan;
+(h) at least annually, by no later than October 1, report to the Executive Appropriations Committee regarding the expenditure of money under this chapter;
+(i) work cooperatively with and receive input and recommendations from the Great Salt Lake Trust Council created under Section 65A-16-301 in accordance with Section 65A-16-302;
+(j) coordinate and work collaboratively with water conservancy districts that serve water users within the Great Salt Lake watershed;
+(k) consult on projects funded by state appropriations that are designed to acquire or lease water or water rights for the Great Salt Lake to ensure the project is consistent with the strategic plan;
+(l) facilitate leasing under Chapter 34, Great Salt Lake Preservation Program; and
+(m) annually report, by no later than October 1, to the Natural Resources, Agriculture, and Environment Interim Committee regarding the activities of the commissioner.
+(2) The commissioner may:
+(a) access information from other state or federal agencies related to the Great Salt Lake;
+(b) develop cooperative agreements between the state, political subdivisions, and agencies of the federal government for involvement in the strategic plan;
+(c) produce research, documents, maps, studies, analysis, or other information that supports the strategic plan for the Great Salt Lake;
+(d) facilitate and coordinate the exchange of information, comments, and recommendations on Great Salt Lake policies between and among:
+(i) state agencies;
+(ii) political subdivisions;
+(iii) institutions of higher education that conduct research relevant to the Great Salt Lake;
+(iv) nonprofit entities; and
+(v) private business;
+(e) communicate with the Great Salt Lake Watershed Council created under Chapter 10g, Part 3, Watershed Councils Act;
+(f) subject to Subsection (4), negotiate agreements, leases, or other means to acquire or lease water or water rights for the Great Salt Lake pursuant to the exemption under Subsection 63G-6a-107.6(2);
+(g) accept money from public and private sources for the purpose of funding the leasing of water or water rights for the Great Salt Lake, including leases under Chapter 34, Great Salt Lake Preservation Program; and
+(h) perform other duties that the commissioner considers necessary or expedient to carry out the purposes of this chapter.
+(3)(a) The commissioner may not expend money for the purpose of acquiring or leasing water or water rights without first obtaining a review and recommendations regarding the expenditure from the Great Salt Lake Trust Council created in accordance with Section 65A-16-301.
+(b) The Great Salt Lake Trust Council shall review an expenditure described in Subsection (3)(a) and may make a favorable recommendation if the Great Salt Lake Trust Council finds that the expenditure is consistent with:
+(i) the strategic plan; and
+(ii) activities of the water trust created in Title 65A, Chapter 16, Great Salt Lake Watershed Enhancement Program.
+(4)(a) A change application for a water right acquired or leased under Subsection (2)(f) for use on sovereign lands in the Great Salt Lake shall be administered in accordance with Section 73-3-30.
+(b) The commissioner shall consult with the commissioner of the Department of Agriculture and Food regarding terms and conditions for leasing agricultural water for the Great Salt Lake.
+(5) In fulfilling the duties under this chapter, the commissioner shall consult and coordinate, as necessary, with:
+(a) divisions within the department;
+(b) the Department of Agriculture and Food;
+(c) the Department of Environmental Quality;
+(d) other applicable state agencies;
+(e) political subdivisions of the state;
+(f) federal agencies;
+(g) elected officials; and
+(h) local tribal officials.</pre></div>
+<div class="sec"><h3>Section 8. Section 65A-16-201 is amended to read:<span class="amend">amends existing law</span></h3>
+<p class="catch">65A-16-201. Great Salt Lake Watershed Enhancement Program established.</p>
+<pre>(1) There is created the &quot;Great Salt Lake Watershed Enhancement Program&quot; to issue grant money to establish a water trust to implement projects, programs, or voluntary arrangements that:
+(a) retain or enhance water flows to:
+(i) sustain the Great Salt Lake and the Great Salt Lake&#x27;s wetlands; and
+(ii) improve water quality and quantity for the Great Salt Lake within the Great Salt Lake watershed;
+(b) conserve and restore upstream habitats that are key to protecting the hydrology and health of the Great Salt Lake and the Great Salt Lake&#x27;s surrounding ecosystem;
+(c) attract or leverage other public or private funding to enhance and preserve the Great Salt Lake watershed;
+(d) engage agricultural producers, local landowners, local planning authorities, and others to support the Great Salt Lake;
+(e) support or benefit the Great Salt Lake&#x27;s natural infrastructure;
+(f) protect and restore uplands, wetlands, and habitats in the Great Salt Lake watershed that benefit hydrologic or ecosystem functions of the Great Salt Lake;
+(g) support efforts to integrate water planning and management efforts that benefit the Great Salt Lake watershed;
+(h) undertake assessments or studies as necessary, consistent with the goals of this Subsection (1);
+(i) support projects or programs to respond to low water levels and rising salinity in the Great Salt Lake;
+(j) require the creation and operation of one or more endowments to sustain the water trust and fulfill the purposes of this chapter; or
+(k) otherwise fulfill the purposes of this Subsection (1) to enhance, preserve, or protect the Great Salt Lake.
+(2) (a) Subject to legislative appropriations, the division shall award a one-time grant to one eligible applicant to establish a water trust authorized under this section.
+(b) The amount of the one-time grant under this Subsection (2) shall be equal to the entire appropriation made to the division to implement this chapter.
+(c) Notwithstanding the requirements for the division issuing a one-time grant under this section, after the grant is issued, the division may receive additional appropriations to be used for the purposes of this chapter, including providing money to the water trust created under this chapter.
+(3) To be considered for the one-time grant under Subsection (2), an eligible applicant shall submit a written application to the division within 60 days of the effective date of this bill that:
+(a) demonstrates that the eligible applicant meets the following criteria that are necessary to submit a written application, that the eligible applicant:
+(i) has offices and staff located in Utah; and
+(ii) individually or collectively possesses:
+(A) a history and ability to attract private funding to implement water and land conservation projects;
+(B) knowledge and experience with the Great Salt Lake and the Great Salt Lake watershed;
+(C) knowledge and experience managing wetlands in the vicinity of the Great Salt Lake;
+(D) knowledge and experience in the creation of three or more water trusts or water funds;
+(E) knowledge and experience in securing approval from the Division of Water Rights for water right applications that support the beneficial use of water in the Great Salt Lake;
+(F) knowledge and experience with Utah water laws; and
+(G) participation in the development of studies and reports on the Great Salt Lake and Utah water policy;
+(b) how the applicant will accomplish the objectives of Subsection (1);
+(c) how the applicant will satisfy Part 3, Water Trust; and
+(d) a description of the types of money, in-kind contributions, and other resources the applicant could contribute or attract to support the creation, operation, and administration of a water trust.
+(4) The division, in consultation with the council and the director of the Division of Water Quality, shall evaluate and rank the applications received under Subsection (3) according to each eligible applicant&#x27;s experience and demonstrated ability to:
+(a) attract and secure public and private funding to implement water and land conservation projects;
+(b) address water quality and hydrology issues of the Great Salt Lake and within the Great Salt Lake watershed;
+(c) create and operate water trusts;
+(d) secure approval from the Division of Water Rights for water right applications that support beneficial use of water in the Great Salt Lake;
+(e) understand, use, and work to improve Utah water laws in a manner that benefits the Great Salt Lake watershed while protecting other beneficial uses of water; and
+(f) participate in collaborative efforts to develop strategies and recommendations to ensure adequate water for the Great Salt Lake and the Great Salt Lake watershed.
+(5) (a) Within 90 days of the effective date of this bill, the division shall select the highest ranking eligible applicant as the grantee.
+(b) The division shall distribute the appropriated money to the grantee as soon as reasonably practicable following the execution of an agreement or agreements that satisfy the requirements of Subsections 51-2a-201.5(4) and 63J-1-220(2).
+(c) The division shall issue the grant within the time period required under this Subsection (5) notwithstanding whether the division has adopted rules to administer the program under Section 65A-16-102.
+(6) If the division does not receive an application from an eligible applicant that satisfies each of the evaluation criteria of Subsection (4), the division shall issue a request for proposals under a competitive award process and shall select the most qualified applicant to receive the grant.
+(7) All money collected under Section 73-32-404 shall be deposited into the Great Salt Lake Watershed Enhancement Program and shall be available for the purposes of this section.</pre></div>
+<div class="sec"><h3>Section 9. Section 73-32-406 is enacted to read:</h3>
+<p class="catch">73-32-406. Rulemaking for exemptions.</p>
+<pre>(1) The commissioner, in accordance with Title 63G, Chapter 3, Utah Administrative Rulemaking Act, shall make rules establishing:
+(a) the rates for exemptions under this part;
+(b) the method for determining net consumptive volume and embodied water;
+(c) the form of exemption application; and
+(d) that the burden of measurement and reporting is on the person seeking the exemption.</pre></div>
+<div class="sec"><h3>Section 10. Section 73-32-407 is enacted to read:</h3>
+<p class="catch">73-32-407. Civil penalty.</p>
+<pre>(1) (a) The commissioner may bring an action against a person who exports water without an exemption.
+(b) The penalty shall be set by rule and may not exceed $1,000 per acre-foot.
+(2) A person may appeal an action under Title 63G, Chapter 4, Administrative Procedures Act.
+(3) If Section 73-32-402 or Section 73-32-404 is held invalid, this section is void.</pre></div>
+<div class="sec"><h3>Section 11. Section 73-32-408 is enacted to read:</h3>
+<p class="catch">73-32-408. Target elevation -- Measurement -- Delivery rate.</p>
+<pre>        (1)
+                (a) The target elevation for the Great Salt Lake is 4,205 feet above sea level.
+                (b) The commissioner may recommend a different target elevation to the Natural
+Resources, Agriculture, and Environment Interim Committee, supported by the determinations under
+Subsection (3), and may not adopt one without legislation.
+        (2) The commissioner shall meter:
+                (a) each volume of water delivered into the basin under this part; and
+                (b) each volume of water delivered from the basin to a public water supplier
+under Section 73-32-409.
+        (3) The commissioner shall determine annually, by measurement and not by projection:
+                (a) evaporative loss from the lake surface for the preceding water year;
+                (b) net inflow from each tributary; and
+                (c) the change in lake elevation attributable to each.
+        (4) The commissioner shall set the delivery rate for each water year at the volume the
+determinations under Subsection (3) indicate is required to reach the target elevation by
+December 31, 2075, and shall revise that rate annually.
+        (5) The commissioner may not set a delivery rate under Subsection (4) that exceeds the
+volume authorized by the jurisdiction from which the water is conveyed.
+        (6) The commissioner shall report the determinations under Subsection (3), the delivery
+rate set under Subsection (4), and the measured elevation, to the Natural Resources,
+Agriculture, and Environment Interim Committee annually.
+        (7)
+                (a) The commissioner shall maintain within the lake a volume of water in the
+range of salinity in which Artemia franciscana and the migratory bird population dependent on it
+are sustained.
+                (b) The commissioner shall determine the location of the volume described in
+Subsection (7)(a), and in doing so shall give preference to proximity to land managed for
+migratory bird habitat.
+                (c) The commissioner may maintain differing salinity in separate parts of the
+lake, and may maintain fresh water in a part of the lake, if the requirement of Subsection (7)(a)
+is met.
+                (d) A gate, breach or causeway alteration is a means of complying with this
+subsection and is not governed separately by this part.
+                (e) The commissioner shall report the salinity of each part of the lake with the
+determinations under Subsection (3).
+        (8) A determination under this section is made by measurement of the preceding water
+year and adjustment of the succeeding one. Nothing in this section requires the commissioner to
+forecast evaporation, precipitation, or inflow.</pre></div>
+<div class="sec"><h3>Section 12. Section 73-32-409 is enacted to read:</h3>
+<p class="catch">73-32-409. Return flow -- Effluent -- Supply agreements.</p>
+<pre>        (1) As used in this section:
+                (a) &quot;Conservation surcharge&quot; means the portion of a public water supplier&#x27;s tiered
+retail rate that exceeds the supplier&#x27;s cost of service and is imposed to reduce discretionary
+consumption.
+                (b) &quot;Return flow&quot; means the portion of a volume used within the basin that is
+retained within the waters of the basin by any means, including a sewer collection system, a water
+reclamation facility, a storm drain, a tributary, or percolation to an aquifer.
+        (2) The Legislature finds that:
+                (a) the Great Salt Lake is a terminal basin, and water within the basin is removed
+from it only by evaporation or by export;
+                (b) under Section 73-1-1 the waters of this state, whether above or under the
+ground, are one public resource, and water recharged to an aquifer within the basin is retained
+within that resource;
+                (c) water retained in an aquifer is not subject to surface evaporation, and
+aquifer recharge within the basin is therefore a means of complying with Section 73-32-408;
+                (d) a volume conveyed into the basin under this part and used within the basin is
+retained within the waters of the basin in the proportion that the use is non-evaporative; and
+                (e) a volume used within the basin in substitution for basin water additionally
+releases an equal volume of basin water to the lake.
+        (3) The commissioner may enter into an agreement with a public water supplier to deliver
+water conveyed into the basin under this part, and is not required to limit the volume delivered
+under such an agreement by reference to a connection&#x27;s prior use.
+        (4) A public water supplier that receives water under an agreement under Subsection (3)
+may not impose a conservation surcharge on a volume attributable to that water.
+        (5) A supplier is not required to reduce, and the commissioner may not require a supplier
+to reduce, a rate below the supplier&#x27;s cost of service.
+        (6)
+                (a) Return flow attributable to water conveyed under this part is credited to the
+delivery required under Section 73-32-408, in the proportion determined by rule under Section
+73-32-406.
+                (b) The commissioner shall credit water recharged to an aquifer within the basin
+at the same proportion as water delivered to the lake, and may store water conveyed under this
+part by aquifer recharge.
+        (7)
+                (a) Effluent discharged from a water reclamation facility within the basin is
+water of the basin.
+                (b) Reuse of that effluent within the basin is not restricted by this part, and
+does not require a permit under this part, except that a use that is evaporative or that
+constitutes export is subject to Sections 73-32-402 and 73-32-404 in the same manner as any other
+use.
+                (c) The commissioner may expend money from the Great Salt Lake Watershed
+Enhancement Program under Section 65A-16-201 to fund, in whole or in part, a project that:
+                        (i) reuses effluent within the basin;
+                        (ii) recharges an aquifer within the basin; or
+                        (iii) otherwise retains water within the waters of the basin that would
+otherwise be lost to evaporation.
+                (d) In evaluating a project under Subsection (7)(c), the commissioner shall
+prefer a project that moves water from surface storage to aquifer storage.
+        (8) Water delivered under an agreement under Subsection (3) for the irrigation of
+landscaping or a garden is secondary water, and is metered under Section 73-10-34. This part does
+not require a meter, a metering plan, or a metering deadline in addition to those required by that
+section.
+        (9) The commissioner shall classify a delivery under this section using the user
+classifications in Section 73-10-34, and may not create a classification of user for purposes of
+this part.
+        (10) A household pays no rate, fee or surcharge under this part for household use, whether
+the water is conveyed into the basin under this part or not.</pre></div>
+<div class="sec"><h3>Section 13. Section 73-32-410 is enacted to read:</h3>
+<p class="catch">73-32-410. Cooling water -- Nonpotable requirement -- Rate -- Consumptive heat rejection</p>
+<pre>prohibited.
+        (1) As used in this section:
+                (a) &quot;Consumptive heat rejection&quot; means heat rejection by a process that
+evaporates water withdrawn from within the basin and does not recover that water and return it to
+the waters of the basin.
+                (b) &quot;Nonpotable water&quot; means water that is not treated to the standards
+established under Title 19, Chapter 4, Safe Drinking Water Act, and that is delivered through a
+distribution system physically separate from a potable distribution system.
+                (c) &quot;Thermal load facility&quot; means a facility within the basin having an installed
+heat rejection capacity of five megawatts or more, including a data center, and does not include a
+hospital, a public or private school, a correctional facility, or a residential building.
+        (2) The Legislature finds that:
+                (a) water evaporated for cooling is removed from the waters of the basin within
+the meaning of Section 73-32-409, and is not return flow;
+                (b) treatment of water to drinking water standards is among the most costly
+components of a public water supplier&#x27;s cost of service, and confers no benefit on a machine; and
+                (c) delivery of potable water to a thermal load facility therefore imposes the
+cost of treatment on a use that cannot make use of it, and charges that cost to every other
+connection on the system;
+                (d) a use that returns no portion of the water applied to the waters of the basin
+is a greater consumptive use than a use that returns a portion, without regard to the purpose of
+either use or to the classification of the user; and
+                (e) consumptive heat rejection returns no portion of the water evaporated,
+while a use classified as institutional under Section 73-10-34 returns a measurable portion by percolation, by
+a storm drain, or to a sewer collection system.
+        (3) A public water supplier may not deliver potable water to a thermal load facility for
+the purpose of heat rejection.
+        (4)
+                (a) A thermal load facility may not use consumptive heat rejection.
+                (b) This section does not prohibit a process by reason of the process being
+evaporative. A process that evaporates water and recovers and returns that water to the waters of
+the basin, including a process enclosed so that vapor is condensed and returned, is not consumptive
+heat rejection.
+                (c) This section does not apply to water conveyed into the basin under this part or
+otherwise imported into the basin, and does not limit the use of imported water for heat rejection,
+for an ornamental water feature, or for any other purpose.
+        (5) Subsections (3) and (4) do not apply to:
+                (a) water used for human consumption, sanitation, or food service at the facility;
+                (b) fire suppression, including the charging and testing of a fire suppression
+system;
+                (c) a use during a state of emergency declared under Title 53, Chapter 2a; or
+                (d) a facility placed in service before the effective date of this section, until
+December 31, 2035.
+        (6)
+                (a) The commissioner shall establish a rate for nonpotable water delivered for
+heat rejection that reflects the cost of service of nonpotable delivery.
+                (b) That rate shall be lower than the potable rate for a comparable volume by not
+less than the supplier&#x27;s avoided cost of treatment.
+                (c) Section 73-32-409(5) does not require a rate under this Subsection (6) to
+equal the cost of service of potable delivery.
+        (7) Water withdrawn by a thermal load facility and returned to the waters of the basin, at
+a temperature and quality established by rule made under Section 73-32-406, is not consumed within
+the meaning of Section 73-32-408, and is return flow under Section 73-32-409.
+        (8) The commissioner may expend money from the Great Salt Lake Watershed Enhancement
+Program under Section 65A-16-201 to fund, in whole or in part:
+                (a) construction of a nonpotable distribution system serving one or more thermal
+load facilities; or
+                (b) a project that reduces or eliminates the volume of water lost to evaporation
+by a process that concentrates a mineral or a salt, without regard to the method by which the
+project does so.
+        (9) Nothing in this section limits the recovery of heat from a thermal load facility for a
+beneficial use, and a facility recovering heat for a beneficial use remains subject to
+Subsection (4).
+        (10)
+                (a) As used in this Subsection (10), &quot;mineral concentration facility&quot; means a
+facility that concentrates a mineral or a salt from water withdrawn from the basin by evaporation
+to the atmosphere.
+                (b) An operator of a mineral concentration facility shall report annually to the
+commissioner, by measurement and not by estimate, the volume of water withdrawn from the basin and
+the volume lost to evaporation.
+                (c) On or before December 31, 2029, an operator of a mineral concentration
+facility shall submit to the commissioner a plan to reduce the volume of water lost to evaporation
+for each unit of product.
+                (d) The commissioner shall make the reports required by Subsection (10)(b)
+available to the public.
+                (e) This Subsection (10) does not prohibit evaporation, does not limit production
+at a mineral concentration facility, does not require the use of a particular method or
+technology, and does not authorize the commissioner to deny, condition or curtail a water right.
+        (11) If any subsection of this section is held invalid, or is not enacted, the remaining
+subsections are given effect without the invalid or unenacted subsection, and Subsections (1)
+through (9) do not depend upon Subsection (10) for their operation.</pre></div>
+<div class="sec"><h3>Section 14. Appropriation.</h3>
+<p class="catch">The following sums of money are appropriated for the fiscal year beginning July 1, 2027,</p>
+<pre>and ending June 30, 2028. Under the terms and conditions of Title 63J, Chapter 1, Budgetary
+Procedures Act, the Legislature appropriates the following sums of money from the funds or
+accounts indicated for the use and support of the government of the state of Utah.
+ITEM 1
+To Office of the Great Salt Lake Commissioner — Basin Export Administration
+        From General Fund, One-time                                             25,000,000
+        Schedule of Programs:
+                Source hydrology and firm yield determination                    9,000,000
+                Alignment, profile and engineering feasibility                    7,000,000
+                Lake mass balance and metering under Section 73-32-408             3,000,000
+                Cost of service and treatment cost determination                  1,000,000
+                Federal credit application preparation                            3,000,000
+                Legal, and rulemaking under Section 73-32-406                     2,000,000
+        The Legislature intends that the appropriation under this item be used to determine
+whether a conveyance described in this part is feasible, and not to construct one. The
+commissioner shall report the determination to the Natural Resources, Agriculture, and
+Environment Interim Committee not later than November 30, 2029.
+        The Legislature further intends that the source hydrology determination address firm
+yield under drought conditions, the coincidence of drought in the donor and receiving basins,
+and the consent of each jurisdiction from which water would be conveyed.
+        The Legislature further intends that the determination under Section 73-32-408 establish
+the measurement and adjustment method described in that section, and not a projection of future
+evaporation, precipitation or inflow.
+        The Legislature further intends that the cost of service determination establish the
+per-acre-foot cost of treating and distributing water delivered under Section 73-32-409, that
+figure being the term on which the price under Subsection 73-32-409(6) depends and the one for
+which no measured value presently exists.
+        No money is appropriated by this bill for the construction, acquisition or operation of
+a conveyance. Construction funding, if any, is contingent on the determination required by this
+item.</pre></div>
+<div class="sec"><h3>Section 15. Effective date.</h3>
+<p class="catch">If approved by two-thirds of all the members elected to each house, this bill takes effect upon approval by the governor, or the day following the constitutional time limit of Utah Constitution, Article VII, Section 8, without the governor&#x27;s signature, or in the case of a veto, the date of veto override.</p>
+<pre></pre></div>
+</div>
+</main>
+<footer>
+Drafted on local hardware and checked against primary sources. The section text was written by a 26B model running on this machine; citations were verified by a second model against scraped statute; every structural rule was read off enrolled bills rather than asserted.<br><code>shelf-bills.py → shelf-code.py → fill.py → make-bill-page.py</code><br><br><a href="index.html">← back to Earth and Water</a>
+</footer>
