@@ -393,7 +393,125 @@ def sweep():
     print("     which is the other bill's entire mechanism, arriving from the opposite side.")
 
 
+# ═════════════════════════════════════════════════════════════════════════════
+# 4 · THE BETTER CROPS — added 4 Aug after Sum asked for real ones
+#
+#   "can we pick a better crop then strawberries, and grass fed beef"
+#
+# ⭐⭐⭐ THE ANSWER IS THAT THERE ISN'T ONE, AND FINDING THAT OUT IS THE POINT.
+#     Every commodity crop in America loses money at the farm gate. Alfalfa at 2025 prices,
+#     −$203. Tart cherry, 26.5c/lb to grow and 18.8c/lb paid. Organic strawberry, a 7.6%
+#     margin on a $112,000 acre. ⭐ Same cherry: 18.8c to the grower, $1.00–2.00 on the shelf.
+#     THE MARGIN IS ENTIRELY DOWNSTREAM. So the variable is not the crop. It is the BUYER —
+#     and the loan fund should finance the press, the freezer, the dryer and the packing shed,
+#     because those are the assets that capture what the field produces. ⭐ That is also where
+#     "escaping a poverty cycle" stops being a sentiment and becomes a line item: you own the
+#     asset that MAKES the value and none of the assets that KEEP it.
+# ═════════════════════════════════════════════════════════════════════════════
+
+# ⚠⚠ A WATER-BASIS DISCREPANCY I CANNOT RESOLVE AND WILL NOT PAPER OVER.
+#    THE-CROP and everything above use 4.25 AF/acre APPLIED for alfalfa, 80% depleted = 3.40.
+#    USU's own field-crop page says alfalfa uses "about 2.5 acre-feet per acre (30 inches)",
+#    which is crop ET. Those are different quantities measured different ways and the honest
+#    move is to carry BOTH — the conclusions survive; the third significant figure does not.
+ALFALFA_ET = 2.50          # AF/acre, USU, crop water use
+ALFALFA_DEPL = 3.40        # AF/acre, applied x 0.80, the basis used above
+
+# USU, Irrigation of Safflower in Northern Utah — 8.7 to 19.0 inches of crop water use for
+# 1,705 to 3,920 lb/acre. ⭐ Two irrigations of 3 inches, mid-June and first week of July.
+# A THIRD IRRIGATION IN MID-JULY GAVE NO YIELD BENEFIT — which is a farmer's whole argument
+# for deficit irrigation, published, by his own land-grant, already.
+BETTER = [
+    dict(name="safflower, irrigated", grant=150, loan=0,
+         rev=3920 * 0.25, cost=520, et=19.0 / 12,
+         note="⭐ SAME DRILL, SAME COMBINE, SAME FIELD. Utah is #2 in the nation already "
+              "(23 M lb, second only to California). The conversion is a different bag of seed."),
+    dict(name="safflower, deficit", grant=150, loan=0,
+         rev=1705 * 0.25, cost=390, et=8.7 / 12,
+         note="the low-water end of USU's own trial. Less money, much less water."),
+    dict(name="tart cherry, commodity", grant=1200, loan=4942,
+         rev=6800 * 0.188, cost=6800 * 0.265, et=2.00,
+         note="⚠ Utah is #2 IN THE NATION and the crop LOSES MONEY at the farm gate: "
+              "26.5c/lb to grow, 18.8c/lb paid. Being second in the country is not a business."),
+    dict(name="tart cherry, own the shelf", grant=1200, loan=4942 + 6000,
+         rev=6800 * 0.55, cost=6800 * 0.265 + 900, et=2.00,
+         note="⭐⭐ the SAME orchard, dried/frozen/pressed and sold at 55c instead of 18.8c. "
+              "$6,000/acre of the loan is the freezer and the press. THAT is the whole fix."),
+    dict(name="grass-finished beef", grant=2701, loan=2150,
+         rev=1502, cost=678, et=3.20 * (ALFALFA_ET / ALFALFA_DEPL),
+         note="⚠ kept for comparison. A fine business and a poor water buy."),
+]
+
+
+def better():
+    W = 78
+    print("\n" + "=" * W)
+    print("  ⭐ THE BETTER CROPS — real ones, on Utah's own published numbers")
+    print("=" * W)
+    alf_rev, _, alf_net = alfalfa_net(ALFALFA["price_t"])
+    print(f"  baseline alfalfa: ${alf_rev:,.0f} rev, ${alf_net:,.0f} net, "
+          f"{ALFALFA_ET:.2f} AF ET, ${alf_rev/ALFALFA_ET:,.0f}/AF\n")
+    print(f"  {'':<26}{'grant':>8}{'loan':>8}{'net/yr':>9}{'vs alf':>9}"
+          f"{'AF ET':>8}{'saved':>8}{'$/AF':>9}")
+    for b in BETTER:
+        net = b["rev"] - b["cost"]
+        saved = ALFALFA_ET - b["et"]
+        ds = annuity(b["loan"], RATE_BILL, TERM)
+        after = net - ds
+        per = f"${b['grant']/saved:,.0f}" if saved > 0 else "—"
+        print(f"  {b['name']:<26}{b['grant']:>8,.0f}{b['loan']:>8,.0f}{after:>9,.0f}"
+              f"{after-alf_net:>+9,.0f}{b['et']:>8.2f}{saved:>8.2f}{per:>9}")
+    print()
+    for b in BETTER:
+        print(f"    {b['name']:<26} {b['note']}")
+
+
+# ═════════════════════════════════════════════════════════════════════════════
+# 5 · THE TWO DOORS — Sum, 4 Aug: "strawberries can pay the premium to export.
+#     so can wagyu. they just get a tripled water bill on 10 times profit,
+#     AND THEY ASK FOR A PIPELINE."
+#
+# ⭐⭐⭐ THE EXPORT PRICE DOES NOT PUNISH THE RICH CROP. IT RECRUITS IT.
+#     One price, applied evenly, is 864% of an alfalfa acre's revenue and 3.7% of a berry
+#     acre's. Alfalfa dies. The berry shrugs, pays, and starts lobbying for more water —
+#     which is the corridor. ⭐ The ratchet, third form.
+# ═════════════════════════════════════════════════════════════════════════════
+MARKET_AF = 1821.0     # $/AF, SLC commercial summer rate — what the export bill charges
+
+DOORS = [
+    ("alfalfa",                    896,   4.25),
+    ("safflower",                  980,   1.58),
+    ("tart cherry, commodity",   1_278,   2.00),
+    ("grass-finished beef",      1_502,   3.20),
+    ("tart cherry, own the shelf", 3_740, 2.00),
+    ("wine grape (RDI)",         8_000,   1.20),
+    ("strawberry, wholesale",  112_000,   2.29),
+]
+
+
+def doors():
+    W = 78
+    print("\n" + "=" * W)
+    print(f"  ⭐⭐⭐ THE TWO DOORS — one price, ${MARKET_AF:,.0f}/AF, applied evenly")
+    print("=" * W)
+    print(f"  {'':<28}{'revenue':>10}{'AF':>7}{'$/AF earned':>14}"
+          f"{'water bill':>12}{'of revenue':>12}")
+    for name, rev, af in DOORS:
+        bill = af * MARKET_AF
+        pct = bill / rev * 100
+        mark = "  ⚠ dead" if pct > 100 else ("  ⭐ pays" if pct < 25 else "  ~")
+        print(f"  {name:<28}{rev:>10,.0f}{af:>7.2f}{rev/af:>14,.0f}"
+              f"{bill:>12,.0f}{pct:>11.1f}%{mark}")
+    print(f"\n  ⭐ the border is ${MARKET_AF:,.0f}/AF, and it is not a number anyone invented —")
+    print("     it is what every commercial buyer in the valley already pays.")
+    print("  ⚠ WAGYU IS DELIBERATELY NOT IN THIS TABLE. It is grain-finished over ~600 days,")
+    print("    so it does not save water, it SPENDS more. It clears the bill easily and it is")
+    print("    the most motivated pipeline advocate there is. ⭐ That is the point, not a flaw.")
+
+
 if __name__ == "__main__":
     run()
     if "--sweep" in sys.argv:
         sweep()
+    better()
+    doors()

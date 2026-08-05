@@ -44,6 +44,17 @@ tr.tot td{border-bottom:2px solid var(--ink);font-weight:700}
 caption{caption-side:bottom;text-align:left;font-size:12.5px;color:var(--dim);padding-top:10px;
         line-height:1.55}
 
+/* the $900. it is the thesis of the whole project as a line item, so it gets to shout once. */
+.shout{border:3px solid var(--ink);padding:30px 32px 26px;margin:26px 0 0;max-width:820px;
+       background:#fffdf8}
+.shout-k{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--dim);margin:0}
+.shout-n{font-family:Georgia,serif;font-size:clamp(64px,14vw,132px);line-height:.92;
+         letter-spacing:-.05em;margin:6px 0 16px;color:var(--grass)}
+.shout-b{max-width:60ch;margin:0 0 11px}
+.shout-r{max-width:60ch;margin:18px 0 0;padding-top:16px;border-top:1px solid var(--rule);
+         font-size:15px;color:#4a4842}
+@media (prefers-color-scheme:dark){.shout{background:#191811}.shout-r{color:#b9b1a0}}
+
 .bill{border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);margin:30px 0 0;
       padding:26px 0 30px;background:#fffdf8}
 .bill pre{margin:0;padding:0 26px;white-space:pre-wrap;word-wrap:break-word;
@@ -69,7 +80,7 @@ a{color:var(--blue)}
 <div><b>0</b><span>crops named</span></div>
 <div><b>0</b><span>rights curtailed</span></div>
 <div><b>800,000</b><span>acre-feet a year</span></div>
-<div><b>$129</b><span>per acre-foot, cheapest tier</span></div>
+<div><b>$85</b><span>per acre-foot, cheapest line</span></div>
 </div>
 </header>
 <main>
@@ -78,6 +89,12 @@ a{color:var(--blue)}
 <p>A working draft of a companion bill. <strong>The state pays the capital cost of converting an irrigated acre away from its current use, lends the rest at three percent, and then leases the water that conversion frees — every year, instream, all the way to the lake.</strong></p>
 <p class="note">⚠ <strong>This was not drafted by a lawyer and it is not legal advice.</strong> It was drafted by a layman with machine assistance, against the live Utah Code. <em>It is published in order to be corrected.</em> Every figure below comes out of <a href="https://github.com/sumbhodi/latter-day-boogie-woogie">a script you can run</a>, and every source in it is public and none of it is ours.</p>
 <p class="note warn">⚠ <strong>The programme it amends already exists.</strong> Utah enacted the Agricultural Water Optimization Act at <b>73-10g-201</b> and appropriated $200 million to it. As of November 2024, $48 million was obligated across 209 projects and <strong>$152 million was still sitting there.</strong> <em>This bill is mostly instructions for money the state has already set aside and not yet spent.</em></p>
+
+<h2>Farm first, lake second</h2>
+<p><strong>This is not a save-the-lake bill and it would be dishonest to sell it as one.</strong> It is a save-the-farm bill, and it is riding on save-the-lake money. <em>That sentence goes at the top rather than in a footnote, because there is no fine print on this.</em></p>
+<p>The other two instruments only take. A bill that only takes has nobody in the room arguing for it. <strong>This is the one with a constituency that gains</strong> — and it is the cheapest of the three.</p>
+<p class="note star">⭐ The people who want the lake saved and the people who farm next to it <strong>are already allies in this state</strong>, and everyone outside it gets that wrong. The Farm Bureau and the conservation groups have worked the same water bills for years. <em>The coalition doesn't need building. It needs telling there's money in it.</em></p>
+<p class="note">⚠ And the loan pool does not have to be the General Fund. <strong>Conservation capital currently buys water rights at $609 to $25,000 an acre-foot and retires them</strong> — one purchase, one acre-foot, one dead farm. <em>This offers the same water at $85 to $176, with the farm still standing and the principal coming back at three percent to do it again.</em></p>
 
 <h2>It still never names a crop</h2>
 <p>The export bill doesn't know what alfalfa is. Neither does this one. <strong>The three tiers below are defined by acre-feet of verified depletion reduction and by how much capital the conversion needs — not by what gets planted.</strong></p>
@@ -115,7 +132,14 @@ a{color:var(--blue)}
 
 <p><strong>Neither is bought.</strong> The canopy is seventeen times the entire conversion; it never goes on a farmer's balance sheet. <em>It is owned by whoever wanted the interconnect anyway, and the farmer receives shade and a lease cheque.</em></p>
 <p class="note star">⭐ <strong>Which is the ratchet again, one scale down.</strong> No developer shows up and the farm is still a farm. A developer shows up and the shade arrives for free.</p>
-<p>And the chiller is worse: a ground-to-air heat exchanger costs $4.25 to $7.14 a square foot under greenhouse glass, so an open acre would be a quarter of a million dollars of buried pipe and fans. <strong>So don't buy one.</strong> Three hundred cubic yards of earth per acre, four feet deep, <em>is</em> the thermal mass a climate battery pays fans to reach. <strong>The mound is the climate battery.</strong> The line item is corrugated tube and labour, and it is $900.</p>
+
+<div class="shout">
+<p class="shout-k">the passive geothermal line item</p>
+<p class="shout-n">$900</p>
+<p class="shout-b">A ground-to-air heat exchanger costs <strong>$4.25 to $7.14 a square foot</strong> under greenhouse glass. Buy one for an open acre and it is <strong>$185,000 to $311,000</strong> of buried pipe, fans and electrical.</p>
+<p class="shout-b"><strong>So don't buy one.</strong> Three hundred cubic yards of earth per acre, four feet deep, <em>is</em> the thermal mass a climate battery pays fans to reach. <strong>The mound is the climate battery.</strong> The line item is corrugated tube and a day with a machine.</p>
+<p class="shout-r">A two-hundred-fold cost reduction, achieved by shaping dirt instead of buying a machine to do what dirt already does. <strong>It is the same move as rejecting heat to rock instead of evaporating water, and the same move as digging a hole to make head instead of building a dam.</strong> The physics is free. The machine is the markup.</p>
+</div>
 
 <h2>The number that actually decides the berry</h2>
 <p>UC Davis costed organic strawberries on the California Central Coast in 2024: 7,000 trays an acre at $16 grosses $112,000 — <strong>and nets $8,555.</strong> A 7.6% margin, because harvest alone is $65,727. <em>Strawberries are a labour business wearing a water business's clothes.</em></p>
@@ -133,6 +157,50 @@ a{color:var(--blue)}
 </tbody></table></div>
 
 <p class="note star">⭐⭐ <strong>At wholesale the acre loses money at every yield Utah can reach. At local price it is the most profitable acre in the state.</strong> The crop cannot leave the basin — <em>which is the export bill's entire mechanism, arriving from the opposite direction.</em> <strong>The two instruments agree without referring to each other.</strong></p>
+
+<h2>So pick a better crop — and finding out you can't is the point</h2>
+<p>Strawberries are a stretch for Utah and grass-fed beef barely saves water. Both fair. So here are real crops, on Utah's own published numbers, and one of them is very good.</p>
+
+<div class="tw"><table>
+<caption>Water here is crop ET, on USU's basis — alfalfa 30 inches. Net is after debt service at 3%.</caption>
+<thead><tr><th>crop</th><th>grant</th><th>loan</th><th>net/yr</th><th>vs alfalfa</th><th>AF saved</th><th>$/AF</th></tr></thead>
+<tbody>
+<tr><td><strong>safflower</strong>, irrigated</td><td>$150</td><td>—</td><td>$460</td><td class="pos">+$366</td><td>0.92</td><td><strong>$164</strong></td></tr>
+<tr><td><strong>safflower</strong>, deficit</td><td>$150</td><td>—</td><td>$36</td><td class="neg">−$58</td><td>1.77</td><td><strong>$85</strong></td></tr>
+<tr><td>tart cherry, at the gate</td><td>$1,200</td><td>$4,942</td><td class="neg">−$856</td><td class="neg">−$950</td><td>0.50</td><td>$2,400</td></tr>
+<tr><td>tart cherry, <strong>own the shelf</strong></td><td>$1,200</td><td>$10,942</td><td>$303</td><td class="pos">+$208</td><td>0.50</td><td>$2,400</td></tr>
+<tr><td>grass-finished beef</td><td>$2,701</td><td>$2,150</td><td>$679</td><td class="pos">+$585</td><td>0.15</td><td>$18,367</td></tr>
+</tbody></table></div>
+
+<p class="note star">⭐ <strong>Safflower is the best line in this entire document and it is not exotic at all.</strong> Utah is <strong>second in the nation</strong> — 23 million pounds, behind only California. The taproot goes down two metres. USU's own trial found that <em>a third irrigation in mid-July produced no yield benefit at all</em> — the land-grant published the deficit-irrigation argument years ago and nobody built a bill on it. <strong>And the conversion cost is a different bag of seed.</strong> Same drill, same combine, same field, same farmer. <em>$85 an acre-foot.</em></p>
+<p class="note warn">⚠ <strong>What safflower cannot do is scale.</strong> Utah's entire crop is sold as birdseed. Two hundred thousand acres would be 780 million pounds against a market that currently absorbs 23 million. <strong>The agronomy works and the market does not.</strong> Which is a marketing-order problem, not a farming problem, and it is solvable — but not by pretending.</p>
+
+<h2>And here is the pattern underneath all of it</h2>
+<p>Utah is <strong>second in the nation at tart cherries.</strong> It is the state fruit. There are 4,732 acres of it.</p>
+<p class="note warn">⚠ It costs <strong>26.5 cents a pound to grow</strong> and the grower is paid <strong>18.8 cents.</strong> On the shelf it is a dollar to two dollars. <em>Being second in the country is not a business.</em></p>
+<p><strong>Alfalfa at 2025 prices: −$203. Tart cherry: −7.7 cents a pound. The California organic strawberry study: a 7.6% margin on a $112,000 acre.</strong> Every one of them loses or nearly loses at the same place.</p>
+<p class="note star">⭐⭐⭐ <strong>So the variable was never the crop. It is the buyer.</strong> The margin lives three miles down the road in a building somebody else owns. <em>You own the asset that makes the value and none of the assets that keep it</em> — which is why "just farm better" has never once worked, and why §304(2)(b) lends for the freezer, the press, the dryer and the packing shed, with a stated preference and a lower collateral test. <strong>The same orchard sold at 55 cents instead of 18.8 clears. The difference is $6,000 an acre at three percent, which is $403 a year.</strong></p>
+
+<h2>The two doors, and the same price opens one and closes the other</h2>
+<p>The export bill charges <strong>$1,821 an acre-foot</strong> — not a number anyone invented, just what every commercial buyer in the valley already pays. Applied evenly, to everyone, naming nobody:</p>
+
+<div class="tw"><table>
+<caption>The right-hand column is the whole argument. One rate. No exemptions. No crop named.</caption>
+<thead><tr><th>the acre</th><th>revenue</th><th>AF</th><th>earns $/AF</th><th>water bill</th><th>of revenue</th></tr></thead>
+<tbody>
+<tr><td>alfalfa</td><td>$896</td><td>4.25</td><td>$211</td><td>$7,739</td><td class="neg">864%</td></tr>
+<tr><td>grass-finished beef</td><td>$1,502</td><td>3.20</td><td>$469</td><td>$5,827</td><td class="neg">388%</td></tr>
+<tr><td>safflower</td><td>$980</td><td>1.58</td><td>$620</td><td>$2,877</td><td class="neg">294%</td></tr>
+<tr><td>tart cherry, at the gate</td><td>$1,278</td><td>2.00</td><td>$639</td><td>$3,642</td><td class="neg">285%</td></tr>
+<tr><td>tart cherry, <strong>own the shelf</strong></td><td>$3,740</td><td>2.00</td><td>$1,870</td><td>$3,642</td><td><strong>97%</strong></td></tr>
+<tr><td>wine grape, deficit-irrigated</td><td>$8,000</td><td>1.20</td><td>$6,667</td><td>$2,185</td><td class="pos">27%</td></tr>
+<tr><td>strawberry</td><td>$112,000</td><td>2.29</td><td>$48,908</td><td>$4,170</td><td class="pos">3.7%</td></tr>
+</tbody></table></div>
+
+<p class="note star">⭐⭐⭐ <strong>The same price is 864% of one acre's revenue and 3.7% of another's — a 234-fold difference, from a single rate that names nobody.</strong> That is not a tax. <em>It is a sorting mechanism, and it sorts on class.</em></p>
+<p><strong>And look where the cherry lands.</strong> At the farm gate it is dead at 285%. Dried, frozen and pressed, it is at 97% — <em>on the line, with the same trees and the same water.</em> <strong>Owning the freezer is literally what moves a family from the first door to the second.</strong></p>
+<p class="note star">⭐ <strong>Which means the price does not punish the crops that can pay it. It recruits them.</strong> Alfalfa dies. The berry shrugs, pays, and starts asking for more acres — which means more water, which means it wants the corridor built. <em>Nobody has to argue for the pipe. Price the water and get out of the way of the people who can afford it.</em></p>
+<p class="note warn">⚠ <strong>Wagyu is deliberately not in that table.</strong> It is grain-finished over roughly six hundred days, so it does not save water — <strong>it spends more.</strong> It clears the bill without noticing and it is the most motivated advocate for new water in the state. <em>That is the mechanism working, not a hole in it.</em></p>
 
 <h2>Only one tier can close the deficit, and it is the tier nobody wants</h2>
 <p>USU puts cattle-feed water in the basin at <strong>908,729 acre-feet a year</strong> — about 267,273 irrigated acres. That is the whole board. The lake's stated deficit is 800,000.</p>
@@ -275,14 +343,21 @@ Section 4. Section 73-10g-304 is enacted to read:
         (1) There is created an enterprise fund known as the Agricultural Water Transition
 Revolving Loan Fund.
         (2) The department may lend from the fund to a person party to an agreement under
-Section 73-10g-302, for the acquisition of livestock, plants, equipment, handling facilities or
-working capital placed in service on a converted acre.
-        (3) A loan under this section shall bear interest at three percent per annum, for a term
+Section 73-10g-302, for the acquisition of:
+                (a) livestock, plants, trees, equipment, handling facilities or working capital
+placed in service on a converted acre; and
+                (b) processing, storage, cold chain, packaging or market access capacity, whether
+or not located on a converted acre, and whether held individually or through a cooperative,
+association or other entity in which the borrower holds an interest.
+        (3) The department shall give preference to a loan under Subsection (2)(b), and may accept
+a lower ratio of collateral to principal for such a loan, on a finding that the capacity financed
+increases the price received by the borrower for a product of the converted acre.
+        (4) A loan under this section shall bear interest at three percent per annum, for a term
 not exceeding 20 years.
-        (4) Repayments of principal and interest shall be deposited in the fund.
-        (5) The department may subordinate a loan under this section to a first lien held by a
+        (5) Repayments of principal and interest shall be deposited in the fund.
+        (6) The department may subordinate a loan under this section to a first lien held by a
 commercial lender.
-        (6) A loan under this section is not secured by, and default on it may not be satisfied
+        (7) A loan under this section is not secured by, and default on it may not be satisfied
 by, a water right.
 
 Section 5. Section 73-10g-305 is enacted to read:
