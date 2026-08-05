@@ -11,6 +11,16 @@ header{max-width:1180px;margin:0 auto;padding:64px 32px 0}
 h1{font-size:clamp(38px,7vw,72px);line-height:1.02;letter-spacing:-.03em;margin:0 0 18px;font-weight:700}
 .lede{font-size:clamp(18px,2.2vw,22px);line-height:1.5;max-width:36ch;color:#3a3833;margin:0}
 main{max-width:1180px;margin:0 auto;padding:0 32px 90px}
+/* ⚠ IMAGE PASS (Sum 2026-08-05: "the press and adds all pics on earth and water need a pass").
+   Every image rule on this page set width:100% with NO height:auto, so an image with an intrinsic
+   height rendered stretched to the column and kept its own pixel height — distorting, and on the
+   press ads overflowing the container and pushing the page sideways. One global cap fixes all of
+   them: never wider than the box, never taller than its own aspect ratio, and the body can no
+   longer scroll horizontally. */
+img{max-width:100%;height:auto}
+.press img,.three img,.two img,.tiers img,.fig img,.adbox img{width:100%;max-width:100%;height:auto}
+.adbox{max-width:100%;overflow:hidden}
+html,body{overflow-x:hidden}
 
 h2{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);
    margin:0 0 10px;font-weight:600}
