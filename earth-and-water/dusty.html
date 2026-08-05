@@ -1,0 +1,362 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dusty Spurs — Agricultural Water Transition Amendments</title>
+<meta name="description" content="What it costs, per acre, to stop growing alfalfa and start growing something else. Three tiers, a grant, a loan at three percent, and no crop named anywhere in the bill.">
+<style>
+:root{--ink:#1a1a1a;--bg:#f7f6f1;--blue:#183eb0;--water:#cbe3f2;--rule:#ddd9cc;--dim:#6a6862;
+      --hot:#b23b2e;--grass:#4a7c3f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font:16px/1.7 -apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif}
+header{max-width:1180px;margin:0 auto;padding:56px 32px 0}
+main{max-width:1180px;margin:0 auto;padding:0 32px 90px}
+.kicker{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--dim);margin:0 0 14px}
+.kicker a{color:var(--dim)}
+h1{font-size:clamp(34px,6vw,60px);line-height:1.03;letter-spacing:-.03em;margin:0 0 6px;font-weight:700}
+.also{font-size:clamp(15px,2vw,19px);color:var(--dim);margin:0 0 18px;font-style:italic}
+.lede{font-size:clamp(18px,2.2vw,22px);line-height:1.5;max-width:40ch;color:#3a3833;margin:0 0 34px}
+h2{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);
+   margin:52px 0 10px;font-weight:600}
+p{max-width:62ch;margin:0 0 13px}
+strong{font-weight:650}
+.note{border-left:3px solid var(--water);padding:2px 0 2px 18px;color:#4a4842;margin:16px 0 0;
+      max-width:62ch}
+.warn{border-left-color:var(--blue)}
+.star{border-left-color:var(--grass)}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;
+      background:var(--rule);border:1px solid var(--rule);margin:26px 0 0;max-width:900px}
+.meta div{background:var(--bg);padding:13px 16px}
+.meta b{display:block;font-size:23px;letter-spacing:-.02em;line-height:1.1}
+.meta span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+
+/* the tables are the argument. figures are tabular so columns line up down the page. */
+.tw{overflow-x:auto;margin:22px 0 0;max-width:900px;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;font-size:14px;min-width:660px;width:100%}
+th{text-align:right;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);
+   font-weight:600;padding:0 0 8px 18px;border-bottom:1px solid var(--ink);white-space:nowrap}
+th:first-child{text-align:left;padding-left:0}
+td{text-align:right;padding:9px 0 9px 18px;border-bottom:1px solid var(--rule);
+   font-variant-numeric:tabular-nums}
+td:first-child{text-align:left;padding-left:0}
+tr.tot td{border-bottom:2px solid var(--ink);font-weight:700}
+.pos{color:var(--grass);font-weight:650}
+.neg{color:var(--hot);font-weight:650}
+caption{caption-side:bottom;text-align:left;font-size:12.5px;color:var(--dim);padding-top:10px;
+        line-height:1.55}
+
+.bill{border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);margin:30px 0 0;
+      padding:26px 0 30px;background:#fffdf8}
+.bill pre{margin:0;padding:0 26px;white-space:pre-wrap;word-wrap:break-word;
+          font:14px/1.75 ui-monospace,"SF Mono",Menlo,monospace;color:#33312c}
+@media(max-width:620px){.bill pre{font-size:12.5px;padding:0 14px}}
+footer{border-top:1px solid var(--rule);max-width:1180px;margin:0 auto;padding:22px 32px 70px;
+       color:var(--dim);font-size:13px}
+a{color:var(--blue)}
+@media (prefers-color-scheme:dark){
+  :root{--ink:#ece7dc;--bg:#14140f;--dim:#8d8676;--rule:#33312c;--water:#2a4657;--blue:#8fa8e8;
+        --hot:#e08a7d;--grass:#8fbf7f}
+  .lede{color:#cfc7b6} .note{color:#b9b1a0} .bill{background:#191811} .bill pre{color:#cfc7b6}
+}
+</style>
+<header>
+<p class="kicker"><a href="index.html">← Earth and Water</a> · the appropriation</p>
+<h1>Agricultural Water Transition Amendments</h1>
+<p class="also">on the street, and on the docket: <strong>Dusty Spurs</strong></p>
+<p class="lede">The other bill takes the discount away. This one pays for the transition, because the transition is what bankrupts every farmer who ever tried it.</p>
+<div class="meta">
+<div><b>$322 M</b><span>appropriated</span></div>
+<div><b>3%</b><span>the loan rate</span></div>
+<div><b>0</b><span>crops named</span></div>
+<div><b>0</b><span>rights curtailed</span></div>
+<div><b>800,000</b><span>acre-feet a year</span></div>
+<div><b>$129</b><span>per acre-foot, cheapest tier</span></div>
+</div>
+</header>
+<main>
+
+<h2>What this is</h2>
+<p>A working draft of a companion bill. <strong>The state pays the capital cost of converting an irrigated acre away from its current use, lends the rest at three percent, and then leases the water that conversion frees — every year, instream, all the way to the lake.</strong></p>
+<p class="note">⚠ <strong>This was not drafted by a lawyer and it is not legal advice.</strong> It was drafted by a layman with machine assistance, against the live Utah Code. <em>It is published in order to be corrected.</em> Every figure below comes out of <a href="https://github.com/sumbhodi/latter-day-boogie-woogie">a script you can run</a>, and every source in it is public and none of it is ours.</p>
+<p class="note warn">⚠ <strong>The programme it amends already exists.</strong> Utah enacted the Agricultural Water Optimization Act at <b>73-10g-201</b> and appropriated $200 million to it. As of November 2024, $48 million was obligated across 209 projects and <strong>$152 million was still sitting there.</strong> <em>This bill is mostly instructions for money the state has already set aside and not yet spent.</em></p>
+
+<h2>It still never names a crop</h2>
+<p>The export bill doesn't know what alfalfa is. Neither does this one. <strong>The three tiers below are defined by acre-feet of verified depletion reduction and by how much capital the conversion needs — not by what gets planted.</strong></p>
+<p>Which matters more here than it does over there. A bill that pays for strawberries is a bill about strawberries, and it dies in committee alongside everybody who doesn't grow them. <em>A bill that pays for an acre-foot is a bill about an acre-foot.</em></p>
+
+<h2>The three tiers, per irrigated acre</h2>
+<p>The baseline is one acre of Utah alfalfa: 3.5 tons at $256 a ton is <strong>$896 of revenue against $802 of cost</strong>, on 4.25 acre-feet applied and 3.40 depleted. <strong>It nets $94.</strong></p>
+
+<div class="tw"><table>
+<caption>Grant is the capital the state buys because the state is the one getting the water. Loan is the part that becomes a business, at 3% over 20 years, because the farmer keeps the upside. Net is after debt service.</caption>
+<thead><tr><th>tier</th><th>grant</th><th>loan</th><th>net/yr</th><th>vs alfalfa</th><th>AF freed</th><th>$/AF</th></tr></thead>
+<tbody>
+<tr><td><strong>X</strong> · dryland grass</td><td>$440</td><td>—</td><td>$24</td><td class="neg">−$70</td><td>3.40</td><td><strong>$129</strong></td></tr>
+<tr><td><strong>Y</strong> · grass-finished beef</td><td>$2,701</td><td>$2,150</td><td>$679</td><td class="pos">+$585</td><td>0.84</td><td>$3,215</td></tr>
+<tr><td><strong>Z</strong> · the year-3000 berry</td><td>$6,800</td><td>$13,300</td><td>see below</td><td>see below</td><td>1.88</td><td>$3,617</td></tr>
+</tbody></table></div>
+
+<p class="note star">⭐ <strong>$129 an acre-foot is the cheapest water in the American West</strong>, and tier X is the tier nobody wants: retire the irrigation, seed a perennial dryland stand, keep it mown and alive and earning nothing. <em>Buying the right outright runs $609 to $25,000 an acre-foot in Utah.</em></p>
+
+<h2>Tier X doesn't close, and the number that closes it is small</h2>
+<p>The capital grant leaves the dryland farmer <strong>$70 an acre a year worse off</strong>, which means the grant buys nothing that stays bought. He plants grass, watches a neighbour make money, and puts the pivot back on in year four.</p>
+<p><strong>So the bill leases the freed water annually instead.</strong> The break-even lease is <strong>$20.59 an acre-foot</strong>. The historic average for environmental water leases in the West is <strong>$30</strong> — <em>above break-even.</em> At $30 the dryland acre pays $32 a year more than alfalfa did, forever, for doing nothing.</p>
+<p class="note star">⭐ <strong>All-in, twenty-year NPV: $576 an acre-foot.</strong> That is the whole cost of the water — capital, lease, discounting — and it is below the bottom of the range for simply buying the right, without ending the farm to get it.</p>
+
+<h2>What is not in tier Z, and it is the most important line here</h2>
+<p>Sum's specification for the berry was <em>water-wise perma-hydro hugelkultur vertical-mounded shaded-by-solar passively-geo-cooled strawberries.</em> Two of those turn out to cost more than everything else combined.</p>
+
+<div class="tw"><table>
+<thead><tr><th>the exotic line</th><th>per acre</th></tr></thead>
+<tbody>
+<tr><td>agrivoltaic canopy — 250 kW/acre at $1.35/W installed</td><td>$337,500</td></tr>
+<tr><td>ground-to-air heat exchanger, greenhouse rate, per open acre</td><td>$185,130 – $311,018</td></tr>
+<tr class="tot"><td>tier Z, farmer side, as actually designed</td><td>$20,100</td></tr>
+</tbody></table></div>
+
+<p><strong>Neither is bought.</strong> The canopy is seventeen times the entire conversion; it never goes on a farmer's balance sheet. <em>It is owned by whoever wanted the interconnect anyway, and the farmer receives shade and a lease cheque.</em></p>
+<p class="note star">⭐ <strong>Which is the ratchet again, one scale down.</strong> No developer shows up and the farm is still a farm. A developer shows up and the shade arrives for free.</p>
+<p>And the chiller is worse: a ground-to-air heat exchanger costs $4.25 to $7.14 a square foot under greenhouse glass, so an open acre would be a quarter of a million dollars of buried pipe and fans. <strong>So don't buy one.</strong> Three hundred cubic yards of earth per acre, four feet deep, <em>is</em> the thermal mass a climate battery pays fans to reach. <strong>The mound is the climate battery.</strong> The line item is corrugated tube and labour, and it is $900.</p>
+
+<h2>The number that actually decides the berry</h2>
+<p>UC Davis costed organic strawberries on the California Central Coast in 2024: 7,000 trays an acre at $16 grosses $112,000 — <strong>and nets $8,555.</strong> A 7.6% margin, because harvest alone is $65,727. <em>Strawberries are a labour business wearing a water business's clothes.</em></p>
+<p>Utah is not Salinas. Shorter season, no coastal fog. Halve the yield on a 7.6% margin and the acre is under water.</p>
+
+<div class="tw"><table>
+<caption>Net dollars per acre per year, before the canopy lease. $16/tray is $2.00/lb — Salinas wholesale, what a shipper pays. $32/tray is $4.00/lb, and a Utah farmers market clears six to eight.</caption>
+<thead><tr><th>trays/acre</th><th>$16</th><th>$20</th><th>$24</th><th>$28</th><th>$32</th></tr></thead>
+<tbody>
+<tr><td>2,500</td><td class="neg">−9,013</td><td>987</td><td>10,987</td><td>20,987</td><td>30,987</td></tr>
+<tr><td>3,000</td><td class="neg">−5,708</td><td>6,292</td><td>18,292</td><td>30,292</td><td>42,292</td></tr>
+<tr><td><strong>3,500</strong></td><td class="neg">−2,402</td><td>11,598</td><td>25,598</td><td>39,598</td><td class="pos">53,598</td></tr>
+<tr><td>4,000</td><td>903</td><td>16,903</td><td>32,903</td><td>48,903</td><td>64,903</td></tr>
+<tr><td>5,000</td><td>7,513</td><td>27,513</td><td>47,513</td><td>67,513</td><td>87,513</td></tr>
+</tbody></table></div>
+
+<p class="note star">⭐⭐ <strong>At wholesale the acre loses money at every yield Utah can reach. At local price it is the most profitable acre in the state.</strong> The crop cannot leave the basin — <em>which is the export bill's entire mechanism, arriving from the opposite direction.</em> <strong>The two instruments agree without referring to each other.</strong></p>
+
+<h2>Only one tier can close the deficit, and it is the tier nobody wants</h2>
+<p>USU puts cattle-feed water in the basin at <strong>908,729 acre-feet a year</strong> — about 267,273 irrigated acres. That is the whole board. The lake's stated deficit is 800,000.</p>
+<p><strong>Tier Y would need 952,381 acres and tier Z would need 425,532.</strong> Neither exists. Every acre in the basin converted to grazed pasture does not close the gap. <em>Only dryland does, and it only just does.</em></p>
+<p class="note warn">⚠ <strong>And tier Z has a ceiling that has nothing to do with money or water.</strong> At 3,500 trays an acre you get 28,000 pounds. Americans eat about eight pounds of strawberries a year and Utah holds 3.5 million people. <strong>One thousand acres feeds the entire state.</strong> California harvests 42,885. <em>This tier is a garnish, not an industry, and any version of this document that implies otherwise is lying.</em></p>
+
+<h2>So the bill is a blend, and the blend is the bill</h2>
+<div class="tw"><table>
+<thead><tr><th>tier</th><th>acres</th><th>AF/yr</th><th>grants</th><th>loans</th></tr></thead>
+<tbody>
+<tr><td><strong>X</strong> · dryland grass</td><td>224,395</td><td>762,942</td><td>$98,733,677</td><td>—</td></tr>
+<tr><td><strong>Y</strong> · grass-finished beef</td><td>41,879</td><td>35,178</td><td>$113,113,871</td><td>$90,038,809</td></tr>
+<tr><td><strong>Z</strong> · the year-3000 berry</td><td>1,000</td><td>1,880</td><td>$6,800,000</td><td>$13,300,000</td></tr>
+<tr class="tot"><td>total</td><td>267,273</td><td>800,000</td><td>$218,647,547</td><td>$103,338,809</td></tr>
+</tbody></table></div>
+<p>One-time: <strong>$218.6 million in grants</strong> and <strong>$103.3 million into a revolving fund that comes back.</strong> Ongoing: <strong>$22.9 million a year</strong> in instream leases at $30 an acre-foot.</p>
+
+<h2>Read it per farm, because that is where the politics live</h2>
+<p>Sixteen percent of the ground stays irrigated and eighty-four percent goes to dry grass. Written that way it reads as the end of farming in northern Utah, and it should be written the other way, because it is the other way.</p>
+<p class="note star">⭐⭐ <strong>It is a 500-acre alfalfa outfit putting 80 acres into grazed pasture and berries, drying the other 420, and clearing $107,383 a year against the $47,250 it makes now on all five hundred.</strong> <em>Two and a quarter times the money on sixteen percent of the water, and the family is still standing on the ground.</em></p>
+<p>Every competing scheme in the West says <em>sell your right and go.</em> That is why every competing scheme loses. <strong>Make Farmers Great Again</strong> is Sum's slogan for this and it is the correct one, which is an uncomfortable sentence to write and it stays in.</p>
+
+<h2>The hard parts, named</h2>
+<p><strong>The hay price recovered.</strong> The Farm Bureau's <em>"Alfalfa in the Red"</em> was −$203 an acre at $171 a ton in 2025. Utah auction hay is <strong>$256</strong> now — the national herd is at a 74-year low and hay followed it up. <strong>At $256 alfalfa makes money again.</strong> <em>The argument can no longer rest on the crop losing money.</em> It rests on the water, which is stable, and on the herd rebuild ending, which it will.</p>
+<p class="note warn">⚠ <strong>Irrigated pasture uses more water than alfalfa.</strong> Four to six acre-feet against 4.25. <strong>The saving in tier Y is the grazing, not the seeding</strong> — irrigating to four inches of forage rather than cutting two feet of hay. Anyone who claims a water saving from putting cows on green grass is wrong, and tier Y's 0.84 acre-feet is the honest number.</p>
+<p class="note warn">⚠ <strong>Retired water does not reach the lake by itself.</strong> Absent protected instream flow the whole way down, a junior downstream user picks it up and the lake sees nothing. <em>That is why §305 leases the water rather than simply paying for the grass</em>, and routes it to the division that HB 33 authorised in 2022 to hold it.</p>
+<p class="note warn">⚠ <strong>Seven years of non-use forfeits a water right</strong> under 73-1-4. No one converts an acre under a statute that takes the right away for converting it. §7 of this bill is the amendment that fixes that, and it is the section a hostile reader should be sent to first.</p>
+<p class="note warn">⚠ <strong>The water saving in tier X starts in year three, not year one.</strong> A dryland stand needs two seasons of irrigation to take. A bill that promises the acre-feet immediately is lying about the only thing it is selling.</p>
+
+<h2>The instrument</h2>
+<div class="bill"><pre>AGRICULTURAL WATER TRANSITION AMENDMENTS
+
+LONG TITLE
+
+General Description:
+        This bill creates a program to pay the capital cost of converting irrigated
+agricultural land to a use that depletes less water, to lend the balance at a reduced rate, and
+to lease the water so freed.
+
+Highlighted Provisions:
+        This bill:
+        &#9656; creates the Agricultural Water Transition Program;
+        &#9656; provides transition grants by tier, determined by verified reduction in depletion
+and by the capital required, and not by the crop or product produced;
+        &#9656; creates a revolving loan fund at a rate of three percent;
+        &#9656; provides for the annual lease of water freed by a conversion, and directs that water
+instream to the Great Salt Lake;
+        &#9656; provides that a conversion under this part is not non-use for purposes of
+forfeiture; and
+        &#9656; appropriates money.
+
+Money Appropriated in this Bill:
+        This bill appropriates:
+        &#9656; $218,650,000 as a one-time appropriation from the General Fund for fiscal year
+2028, to the Agricultural Water Transition Program;
+        &#9656; $103,350,000 as a one-time appropriation from the General Fund for fiscal year
+2028, to the Agricultural Water Transition Revolving Loan Fund; and
+        &#9656; $22,900,000 as an ongoing appropriation from the General Fund, beginning in
+fiscal year 2029, for leases under Section 73-10g-305.
+
+Other Special Clauses:
+        None
+
+Utah Code Sections Affected:
+AMENDS:
+        73-1-4, as last amended by Laws of Utah 2024
+        65A-16-201, as last amended by Laws of Utah 2023
+ENACTS:
+        73-10g-301, 73-10g-302, 73-10g-303, 73-10g-304, 73-10g-305, 73-10g-306,
+                Utah Code Annotated 1953
+
+Be it enacted by the Legislature of the state of Utah:
+
+Section 1. Section 73-10g-301 is enacted to read:
+
+Part 3. Agricultural Water Transition
+
+73-10g-301. Definitions.
+        As used in this part:
+        (1) &quot;Basin&quot; means the Great Salt Lake watershed as defined in Section 65A-16-101.
+        (2) &quot;Conversion&quot; means a change in the use of a converted acre that results in a
+verified reduction in depletion, and that does not consist solely of a change in the method of
+irrigation.
+        (3) &quot;Converted acre&quot; means an acre of land within the basin that:
+                (a) was irrigated in at least five of the seven calendar years preceding the
+application; and
+                (b) is the subject of an agreement under Section 73-10g-302.
+        (4) &quot;Depletion&quot; means water consumed and not returned to the basin, determined under
+Subsection 73-10g-306(1).
+        (5) &quot;Freed water&quot; means the reduction in depletion attributable to a conversion,
+expressed in acre-feet per year.
+        (6) &quot;Program&quot; means the Agricultural Water Transition Program created in Section
+73-10g-302.
+
+Section 2. Section 73-10g-302 is enacted to read:
+
+73-10g-302. Agricultural Water Transition Program.
+        (1) There is created the Agricultural Water Transition Program, administered by the
+department in consultation with the Division of Water Resources and the state engineer.
+        (2) The Legislature finds that:
+                (a) the capital cost of changing the use of an irrigated acre, and not the
+economics of the use itself, is the principal obstacle to a change in use;
+                (b) a program that acquires water by ending an agricultural operation acquires
+the water once and forecloses the acre; and
+                (c) a program that pays the cost of conversion acquires the same water and
+leaves an operating farm on the land.
+        (3) The department shall enter into an agreement with an applicant that provides for:
+                (a) the grant payable under Section 73-10g-303;
+                (b) any loan under Section 73-10g-304;
+                (c) the lease of freed water under Section 73-10g-305; and
+                (d) the term of the agreement, which may not be less than 10 years.
+        (4) An agreement under this section is voluntary, and the department may not condition
+any other benefit, permit, approval or program eligibility on entering into one.
+
+Section 3. Section 73-10g-303 is enacted to read:
+
+73-10g-303. Transition grants.
+        (1) The department shall pay a transition grant per converted acre, not to exceed:
+                (a) $500, where the conversion is to perennial cover that is not irrigated after
+the establishment period;
+                (b) $2,750, where the acre remains in irrigated production and freed water is at
+least 0.5 acre-feet per acre per year; or
+                (c) $7,000, where the acre remains in irrigated production, freed water is at
+least 1.5 acre-feet per acre per year, and the conversion includes a durable improvement to the
+soil profile or a permanent structure.
+        (2) A grant under this section is determined by the tier under Subsection (1) and by
+documented cost, and is not determined by:
+                (a) the crop, animal, product or process produced on the converted acre;
+                (b) the identity, priority date or seniority of any water right; or
+                (c) whether the converted acre produces any marketable product at all.
+        (3) A grant may not exceed the documented cost of the conversion.
+        (4) The department may pay up to 40% of a grant on execution of the agreement, and the
+balance on verification under Section 73-10g-306.
+        (5) An establishment period under Subsection (1)(a) may not exceed three irrigation
+seasons, and water applied during that period is not a breach of the agreement.
+
+Section 4. Section 73-10g-304 is enacted to read:
+
+73-10g-304. Agricultural Water Transition Revolving Loan Fund.
+        (1) There is created an enterprise fund known as the Agricultural Water Transition
+Revolving Loan Fund.
+        (2) The department may lend from the fund to a person party to an agreement under
+Section 73-10g-302, for the acquisition of livestock, plants, equipment, handling facilities or
+working capital placed in service on a converted acre.
+        (3) A loan under this section shall bear interest at three percent per annum, for a term
+not exceeding 20 years.
+        (4) Repayments of principal and interest shall be deposited in the fund.
+        (5) The department may subordinate a loan under this section to a first lien held by a
+commercial lender.
+        (6) A loan under this section is not secured by, and default on it may not be satisfied
+by, a water right.
+
+Section 5. Section 73-10g-305 is enacted to read:
+
+73-10g-305. Lease of freed water.
+        (1) The department shall lease the freed water attributable to a converted acre for the
+term of the agreement, and shall pay for it annually at the rate published under Subsection (4).
+        (2) Water leased under this section shall be:
+                (a) assigned to the Division of Forestry, Fire, and State Lands for the purposes
+described in Section 65A-16-201; and
+                (b) protected from diversion by an intervening user for the length of the stream
+between the converted acre and the Great Salt Lake.
+        (3) A lease under this section is a beneficial use of the water leased.
+        (4) The Division of Water Resources shall publish, on or before January 31 of each year,
+the rate payable under this section, which may not be less than $30 per acre-foot, adjusted
+annually for inflation.
+        (5) The department shall reduce the payment under this section, pro rata, for any portion
+of the freed water that Subsection (2)(b) cannot protect.
+
+Section 6. Section 73-10g-306 is enacted to read:
+
+73-10g-306. Verification and reporting.
+        (1) The Division of Water Resources shall determine depletion and freed water by remote
+sensing of evapotranspiration, using a published methodology, and not by measurement of
+diversion alone.
+        (2) The department shall verify each converted acre before paying the balance of a grant,
+and at least once every three years thereafter.
+        (3) The department shall report annually to the Natural Resources, Agriculture, and
+Environment Interim Committee:
+                (a) acres converted, by tier;
+                (b) freed water, by tier, in acre-feet;
+                (c) cost per acre-foot of freed water, by tier, including grants, loans and
+leases; and
+                (d) the number of agreements terminated, and the reason for each.
+        (4) If the cost per acre-foot under Subsection (3)(c) for a tier exceeds the cost of
+acquiring an equivalent quantity by purchase of a water right, the department shall state so
+plainly in the report.
+
+Section 7. Section 73-1-4 is amended to read:
+
+73-1-4. Reversion to the public by abandonment or forfeiture for nonuse.
+        ...
+        (2)(e) The period of nonuse described in Subsection (2)(a) does not include a period
+during which the water right is subject to an agreement under Section 73-10g-302, or during
+which water is leased under Section 73-10g-305.
+
+Section 8. Section 65A-16-201 is amended to read:
+
+65A-16-201. Great Salt Lake Watershed Enhancement Program.
+        ...
+        ( ) The division may expend money in the program for leases under Section 73-10g-305.
+
+Section 9. Appropriation.
+
+        The following sums of money are appropriated for the fiscal year beginning July 1, 2027
+and ending June 30, 2028. These are additions to amounts previously appropriated for fiscal year
+2028.
+
+        To the Department of Agriculture and Food &mdash; Agricultural Water Transition Program
+                From the General Fund, one-time                              $218,650,000
+
+        To the Agricultural Water Transition Revolving Loan Fund
+                From the General Fund, one-time                              $103,350,000
+
+        The following sums of money are appropriated for the fiscal year beginning July 1, 2028
+and ending June 30, 2029, and annually thereafter.
+
+        To the Department of Agriculture and Food &mdash; leases under Section 73-10g-305
+                From the General Fund                                         $22,900,000
+
+Section 10. Effective date.
+
+        This bill takes effect on May 4, 2028.</pre></div>
+
+<p class="kicker" style="margin-top:38px"><a href="index.html">← Earth and Water</a> · <a href="spurs.html">the export bill →</a> · <a href="boots.html">never trust polished boots →</a></p>
+</main>
+<footer>Every figure on this page comes out of <b>transition.py</b>, which is in the repository and which you can run. Sources: UC Davis Cost and Return Studies (organic strawberries, Central Coast, 2024) · USDA-AMS National Grass Fed Beef Report (Q2 2026) · Utah Farm Bureau, <em>Alfalfa in the Red</em> · Utah Division of Water Resources, Agricultural Water Optimization Program Annual Report (November 2024) · USU basin cattle-feed water use · Great Salt Lake Strike Team.</footer>
