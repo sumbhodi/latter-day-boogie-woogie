@@ -70,3 +70,27 @@ plan.html, so the whole site quotes one set.
 holder per year (irrigation company assessments, conservancy district rates, delivery
 charges). The spread between that and $1,821 is the load-bearing figure of the DUST
 argument, so it gets a URL and a date before it gets printed.
+
+## Elevations — the bench corridor (verified 13 Aug 2026)
+
+USGS Elevation Point Query Service, <https://epqs.nationalmap.gov/v1/json>, feet, WGS84.
+
+| point | ft | | point | ft |
+|---|---|---|---|---|
+| Great Salt Lake | 4,195 | | State Capitol | 4,533 |
+| Rose Park | 4,216 | | Univ. of Utah | 4,781 |
+| SLC Airport | 4,220 | | Foothill bench | 4,825 |
+| Bountiful flats | 4,232 | | Olympus Cove | 4,933 |
+| Farmington Bay | 4,203 | | Ensign Peak | 5,059 |
+| Ogden flats | 4,298 | | Bountiful bench | 5,194 |
+| Layton flats | 4,353 | | **Farmington bench** | **5,951** |
+| Emigration mouth | 5,168 | | Emigration upper | 5,960 |
+| Millcreek mouth | 5,083 | | Millcreek upper | 6,840 |
+| | | | Jordanelle | 6,145 |
+
+Working head: Farmington **1,748 ft** · Bountiful 962 · Avenues→Rose Park 843 ·
+Kaysville 658 · Ogden 446 · Layton 280 · Capitol→Airport only **313** (too little).
+Jordanelle→valley 1,925 ft, but 25 miles away over existing conveyance.
+
+⚠ Millcreek (1,757 ft) and the Cottonwoods are protected drinking-water watershed —
+head that exists and is not available. Kept out of the corridor table on purpose.
