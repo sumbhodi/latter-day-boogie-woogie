@@ -52,11 +52,21 @@ each piece (the flagship bot does this well while it scrapes) + a "today's theme
 
 *Sources this session: [Gutendex](https://gutendex.com/) · [Gateless Gate (sacred-texts)](https://sacred-texts.com/bud/glg/index.htm) · [Nietzsche, Gutenberg #1998](https://www.gutenberg.org/ebooks/1998) · [Tao Te Ching, Standard Ebooks](https://standardebooks.org/ebooks/laozi/tao-te-ching/james-legge)*
 
-## ⚠ NUMBERS THAT ARE NOT YET SOURCED (flagged 12 Aug 2026)
+## Water price — the reference numbers (verified 12 Aug 2026)
 
-**~$2,851/AF peak commercial municipal rate** — SUM'S ESTIMATE, recalled once from a single
-reading days ago, mid-session, across a very long conversation. It is a memory of a number,
-not a citation. **It is also the load-bearing figure of the entire DUST bill** — the spread
-between it and the rights-holder price IS the argument. Do not print it, quote it to a
-reporter, or hand it to a clinic until it is replaced by a rate schedule with a URL and a
-date. Same standard for the ~$300/AF rights-price side of the spread.
+Salt Lake City Public Utilities, FY27 schedule, effective 1 July 2026 —
+<https://www.slc.gov/utilities/fy27rates/>. One acre-foot = 435.6 CCF.
+
+| rate class | per CCF | per acre-foot |
+|---|---|---|
+| commercial / industrial · summer (Apr–Oct) | $4.18 | **$1,821** |
+| commercial / industrial · winter | $2.58 | $1,124 |
+| household top tier | $5.94 | $2,586 |
+
+$1,821/AF is the reference rate DUST uses. These figures match the ones already carried in
+plan.html, so the whole site quotes one set.
+
+**Still to source — the rights-holder side.** What an acre-foot actually costs a rights
+holder per year (irrigation company assessments, conservancy district rates, delivery
+charges). The spread between that and $1,821 is the load-bearing figure of the DUST
+argument, so it gets a URL and a date before it gets printed.
