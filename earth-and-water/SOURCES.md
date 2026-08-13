@@ -51,3 +51,12 @@ say the same thing** — cross-tradition harmony. "Easier than finding disagreem
 each piece (the flagship bot does this well while it scrapes) + a "today's theme" picker in the paper.
 
 *Sources this session: [Gutendex](https://gutendex.com/) · [Gateless Gate (sacred-texts)](https://sacred-texts.com/bud/glg/index.htm) · [Nietzsche, Gutenberg #1998](https://www.gutenberg.org/ebooks/1998) · [Tao Te Ching, Standard Ebooks](https://standardebooks.org/ebooks/laozi/tao-te-ching/james-legge)*
+
+## ⚠ NUMBERS THAT ARE NOT YET SOURCED (flagged 12 Aug 2026)
+
+**~$2,851/AF peak commercial municipal rate** — SUM'S ESTIMATE, recalled once from a single
+reading days ago, mid-session, across a very long conversation. It is a memory of a number,
+not a citation. **It is also the load-bearing figure of the entire DUST bill** — the spread
+between it and the rights-holder price IS the argument. Do not print it, quote it to a
+reporter, or hand it to a clinic until it is replaced by a rate schedule with a URL and a
+date. Same standard for the ~$300/AF rights-price side of the spread.
