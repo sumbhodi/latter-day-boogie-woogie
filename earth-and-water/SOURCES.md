@@ -94,3 +94,27 @@ Jordanelle→valley 1,925 ft, but 25 miles away over existing conveyance.
 
 ⚠ Millcreek (1,757 ft) and the Cottonwoods are protected drinking-water watershed —
 head that exists and is not available. Kept out of the corridor table on purpose.
+
+---
+
+## ⚠ THE LAKE HAS THREE NUMBERS, AND THE PANELS USE THE HIGHEST
+
+This is the kind of thing a reviewer finds, so it is stated here rather than discovered.
+
+| ft | what it is | where it is used |
+|---|---|---|
+| **4,191.7** | the **actual gauge**, June 2026 (USGS) | the arithmetic — deficit, spread, rates |
+| 4,195 | USGS Elevation Point Query at the lake surface | the elevation table above |
+| **4,203.6** | **what the terrain tiles carry** (1,281.2 m) | **every drawing on this site** |
+
+**So the water panels show the lake roughly twelve feet higher than it actually stands today.**
+
+⚠ **And it cannot simply be corrected downward.** The elevation model records the water surface as
+flat ground at that height — there is no bathymetry beneath it. Flood-filling to a *lower* level has
+nothing to cut into, so a re-drawn shoreline at 4,191.7 would be invented rather than measured, which
+is the one thing nothing on this site is allowed to be.
+
+⭐ **It does not move any conclusion.** Every figure in the bills and the transition arithmetic is
+computed from the gauge, not from the drawing. The drawings are a picture of the basin's shape, and
+the shape is right. *But the lake in them is healthier than the lake outside, and that should be
+known before anyone measures a shoreline off a rendering.*
