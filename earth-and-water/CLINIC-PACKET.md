@@ -46,7 +46,8 @@ measure their water gets charged for it.
 |---|---|
 | `SPURS-BILL-v2-DEPLETION.md` | full redraft + what-changed note + counsel questions |
 | `SPURS-BILL.md` | v1, kept for the diff — the Commerce Clause cautionary tale |
-| `BOOTS-BILL.md` + `BOOTS-AMENDMENTS-v2.md` | original + patch set (Changes 0–3) |
+| `boots.html` | **BOOTS, current — 54-26 Part 10, §§1001–1007.** The enacted text is on the page. |
+| `_retired/` | the abandoned 54-25 draft and its patch set. Superseded 13 Aug; kept only as a record. |
 | `dusty.html` / the Dusty Spurs pages | tier math, $/AF, the appropriation |
 | `RED-TEAM-LAKE-PACKAGE.md` | our own objections, attacked first, with current answers |
 | `SOURCES.md` | every figure's public source |

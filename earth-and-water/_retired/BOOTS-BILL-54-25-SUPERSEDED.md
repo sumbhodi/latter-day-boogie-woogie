@@ -1,3 +1,31 @@
+⚠⚠ SUPERSEDED — DO NOT USE. Retired 18 August 2026.
+
+This is the OLD 54-25 draft: it PROHIBITED consumptive heat rejection, and it was written
+into Title 54 Chapter 25 — a chapter that is already occupied (verified against le.utah.gov,
+12 Aug 2026). It was abandoned for two reasons, both deliberate:
+
+  1. THE CHAPTER NUMBER DOES NOT EXIST TO BE TAKEN. Resolved 13 Aug 2026 by moving the bill
+     inside the large-load statute the Legislature already wrote.
+  2. A PROHIBITION INVITES THE ARGUMENT THAT KILLS BILLS HERE — "Utah just told the biggest
+     capital wave in a generation to go build in Nevada." A price invites a design review.
+
+THE CURRENT BILL IS 54-26 PART 10, sections 1001-1007 — "Thermal Load Facility Siting."
+  · the page:  boots.html
+  · the index: bills.html
+  · the packet PDF already sent out is CURRENT and contains Part 10
+
+Everything people go looking for in this file is in Part 10 already, and better:
+  · BELOW GRADE, town chooses the surface ......... 54-26-1005
+  · condense-and-return exclusion (the boiling Q) .. 54-26-1002(5)
+  · hospitals/schools/prisons/homes excluded ....... 54-26-1001(7)
+  · 150% of peak + 36 h storage .................... 54-26-1003
+  · grid support ................................... 54-26-1004
+  · unmeasured water presumed consumed ............. 54-26-1006(4)
+
+Kept only as a record of the road not taken.
+
+────────────────────────────────────────────────────────────────────────────────────────
+
 THERMAL LOAD FACILITY REQUIREMENTS
 
 LONG TITLE
@@ -31,6 +59,7 @@ ENACTS:
         54-25-201, Utah Code Annotated 1953
         54-25-202, Utah Code Annotated 1953
         54-25-203, Utah Code Annotated 1953
+        54-25-204, Utah Code Annotated 1953
         54-25-301, Utah Code Annotated 1953
 
 Be it enacted by the Legislature of the state of Utah:
@@ -111,12 +140,36 @@ compensation and the allocation of interconnection costs.
 may resolve a dispute between the parties on the petition of either.
         (4) An agreement under this section does not make a thermal load facility a public utility.
 
-Section 5. Section 54-25-301 is enacted to read:
+Section 5. Section 54-25-204 is enacted to read:
+
+54-25-204. Surface use.
+        (1) A thermal load facility commencing operation after the effective date of this chapter
+shall place its heat rejection equipment and its computing or process equipment below finished
+grade.
+        (2) The surface estate above equipment placed under Subsection (1) shall remain available
+for non-industrial use, and the use shall be determined by the land use authority in which the
+facility is located.
+        (3) A facility satisfies Subsection (2) by dedicating an easement, covenant or other
+instrument of record that runs with the land and is enforceable by the land use authority.
+        (4) Subsection (2) does not require a facility to construct, fund, operate or maintain a
+use selected under that subsection, and does not require public access to security, electrical,
+mechanical or ventilation appurtenances.
+        (5) A facility may retain at the surface only:
+                (a) access, ventilation, electrical and emergency appurtenances;
+                (b) generation and storage facilities permitted under Section 54-25-202; and
+                (c) an impoundment used for heat rejection or storage.
+        (6) The land use authority may reduce or waive a requirement of this section for a site
+where below-grade placement is infeasible by reason of groundwater, bedrock, subsidence or flood
+hazard.
+        (7) This section does not apply to a facility placed in service before the effective date
+of this chapter.
+
+Section 6. Section 54-25-301 is enacted to read:
 
 54-25-301. Severability.
         If any provision of this chapter is held invalid, the remaining provisions are given effect
 without the invalid provision.
 
-Section 6. Effective date.
+Section 7. Effective date.
 
         This bill takes effect on May 6, 2027.
